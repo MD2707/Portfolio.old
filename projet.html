@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleProjet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="projetScroll.js"></script>
+    <title>Mes Projets</title>
+    <script>
+        window.onscroll = function(e){scrollProjet()}
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <a class="button" href="index.html">Accueil</a>
+        </div>
+        <div>
+            <a class="button" href="contact.html">Contact</a>
+        </div>
+    </header>
+    <div id="responsiveHeader">
+        <div>
+            <img src="image/menu.png" onclick="onClickMenu()" alt="menu">
+        </div>
+        <div id="menu">
+            <div class="burgerMenuItem">
+                <a  href="index.html">Accueil</a>
+            </div>
+            <div class="burgerMenuItem">
+                <a  href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="pres2">
+        <div class="container">
+            <img class="image" src="image/meteo.png" alt="meteo">
+            <div class="middle">
+                <div class="text"><a href="pdf/stationMeteo.pdf#zoom=80" target="_blank">Plus d'Information </a></div>
+            </div>
+        </div>
+        <div class="boite">
+            <div class="titre">
+                <p>La <span id="span1">Station meteo</span></p>    
+            </div>
+            <div class="texte">
+                <br>
+                <p>Ce projet de Station Meteo a été réalisé lors de mon année de Terminal</p>
+                <p>J'avais pour objectif de réaliser une interface visuelle et accessible...</p>
+                <br>
+                <p id="texteLien">Cliquez sur l'image pour plus d'information !</p>
+            </div>
+        </div>
+    </div>
+    <div class="pres">
+        <div class="boite">
+            <div class="titre">
+                <p>Le <span id="span2">Pong</span></p>
+            </div>
+            <div class="texte">
+                <br>
+                <p>Le projet Pong a été réalisé lors de mon 1er semestre de BUT informatique</p>
+                <p>J'ai dû implementer les collisions, les raquettes et différents mode de jeu...</p>
+                <br>
+                <p id="texteLien2">Cliquez sur l'image pour plus d'information !</p>     
+            </div>
+        </div>
+        <div class="container">
+            <img class="image" src="image/pong.png" alt="pong">
+            <div class="middle">
+                <div class="text"><a href="pdf/pong.pdf#zoom=80" target="_blank">Plus d'Information </a></div>
+            </div>
+        </div>
+    </div>
+    <div class="pres2">
+        <div class="container">
+            <img class="image" src="image/lowatem.png" alt="Lowatem">
+            <div class="middle">
+                <div class="text"><a href="pdf/Lowatem.pdf#zoom=80" target="_blank">Plus d'Information </a></div>
+            </div>
+        </div>
+        <div class="boite">
+            <div class="titre">
+                <p>Le <span id="span3">Lowatem</span></p>
+            </div>
+            <div class="texte">
+                <br>
+                <p>Le Lowatem est le 2eme projet du BUT info, il s'agit d'un jeu de plateau.</p>
+                <p>Il fallait tout d'abord implémenter les règles du jeu, puis créer une IA...</p>
+                <br>
+                <p id="texteLien3">Cliquez sur l'image pour plus d'information !</p>
+            </div>
+        </div>
+    </div>
+    <div class="pres">
+        <div class="boite">
+            <div class="titre">
+                <p>L'App <span id="span4">Workon</span></p>
+            </div>
+            <div class="texte">
+                <br>
+                <p>L'application Workon est un projet personnel, un outil pour noter les devoirs</p>
+                <p>j'ai donc suivit de nombreux tutoriels sur internet pour réaliser l'application...</p>
+                <br>
+                <p id="texteLien4">Cliquez sur l'image pour plus d'information !</p>
+            </div>
+        </div>
+        <div class="container">
+            <img class="image" src="image/meteo.png" alt="meteo">
+            <div class="middle">
+                <div class="text"><a href="pdf/Workon.pdf#zoom=80" target="_blank">Plus d'Information </a></div>
+            </div>
+        </div>
+    </div>
+    <div class="pres2">
+        <div class="container">
+            <img class="image" src="image/nerditEntreprise.png" alt="nerdit">
+            <div class="middle">
+                <div class="text"><a href="pdf/nerdit.pdf#zoom=80" target="_blank">Plus d'Information </a></div>
+            </div>
+        </div>
+        <div class="boite">
+            <div class="titre">
+                <p> L'entreprise<span id="span5"> Nerd.it</span></p>
+            </div>
+            <div class="texte">
+                <br>
+                <p>Durant ce projet nous avons abordé différents élements de managment</p>
+                <p>comme l'analyse PESTEL ou l'analyse SWOT...</p>
+                <br>
+                <p id="texteLien5">Cliquez sur l'image pour plus d'information !</p>
+            </div>
+        </div>
+    </div>
+    <div class="pres">
+        <div class="boite">
+            <div class="titre">
+                <p>L'Atelier <span id="span6">JPO</span></p>
+            </div>
+            <div class="texte">
+                <br>
+                <p>L'Atelier processing était un projet pour les journéees portes ouvertes</p>
+                <p>Nous avons donc dû créer un "Tp" ludique destiné à des lycéens...</p>
+                <br>
+                <p id="texteLien6">Cliquez sur l'image pour plus d'information !</p>
+            </div>
+        </div>
+        <div class="container">
+            <img class="image" src="image/terrain.PNG" alt="jpo">
+            <div class="middle">
+                <div class="text"><a href="pdf/atelierProcessing.pdf#zoom=80">Plus d'Information </a></div>
+            </div>
+        </div>
+    </div>
+    <div class="pres2">
+        <div class="container">
+            <img class="image" src="image/ubuntuAccueil.png" alt="machine Virtuelle">
+            <div class="middle">
+                <div class="text"><a href="pdf/machineVirtuelle.pdf#zoom=80" target="_blank">Plus d'Information </a></div>
+            </div>
+        </div>
+        <div class="boite">
+            <div class="titre">
+                <p>La Machine <span id="span7">Virtuelle</span></p>
+            </div>
+            <div class="texte">
+                <br>
+                <p>Durant ce projet, j'ai dû créer une machine Virtuelle pour une entreprise </p>
+                <p>(fictive) ,Destiné à une équipe de developeur informatique</p>
+                <br>
+                <p id="texteLien7">Cliquez sur l'image pour plus d'information !</p>
+            </div>
+        </div>
+    </div>
+    <div class="pres">
+        <div class="boite">
+            <div class="titre">
+                <p>Création <span id="span8">BD</span></p>
+            </div>
+            <div class="texte">
+                <br>
+                <p>Ce projet de création de base de donnée m'a permis de manipuler </p>
+                <p> le langage SQL selon un  cahier des charges précis...</p>
+                <br>
+                <p id="texteLien8">Cliquez sur l'image pour plus d'information !</p>
+            </div>
+        </div>
+        <div class="container">
+            <img class="image" src="image/bd.png" alt="bd">
+            <div class="middle">
+                <div class="text"><a href="pdf/creationBD.pdf#zoom=80">Plus d'Information </a></div>
+            </div>
+        </div>
+    </div>
+    <div class="pres2">
+        <div class="container">
+            <img class="image" src="image/nerdit.png" alt="nerdit">
+            <div class="middle">
+                <div class="text"><a href="pdf/nerdit.pdf#zoom=80" target="_blank">Plus d'Information </a></div>
+            </div>
+        </div>
+        <div class="boite">
+            <div class="titre">
+                <p>Le Site <span id="span5">Nerd.it</span></p>
+            </div>
+            <div class="texte">
+                <br>
+                <p>Nerd.it est une entreprise fictive que nous avons dû créer en groupe de 4</p>
+                <p>Il a ensuite fallu créer un site correspondant à cette entreprise...</p>
+                <br>
+                <p id="texteLien5">Cliquez sur l'image pour plus d'information !</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footerDiv">
+            <p>Copyright Mathias Duprat 2022</p>
+        </div>
+        <div  id="footerA" >
+            <a href="mentionLegal.html">mention légales</a>
+        </div>
+    </footer>   
+</body>
+</html>

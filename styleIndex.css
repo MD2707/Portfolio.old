@@ -1,0 +1,714 @@
+#zoneDepart{
+    width: 50rem;
+    height: 20rem;
+    position: relative;
+    top: 20000px;
+    left: 5100px;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.titreProjet{color: white;
+        text-shadow: 
+          -1px -1px 1px #efede3, 
+          0px 1px 0 #2e2e2e, 
+          0px 2px 0 #2c2c2c, 
+          0px 3px 0 #2a2a2a, 
+          0px 4px 0 #282828, 
+          0px 5px 0 #262626, 
+          0px 6px 0 #242424, 
+          0px 7px 0 #222, 
+          0px 8px 0 #202020, 
+          0px 9px 0 #1e1e1e, 
+          0px 10px 0 #1c1c1c, 
+          0px 11px 0 #1a1a1a, 
+          0px 12px 0 #181818, 
+          0px 13px 0 #161616, 
+          0px 14px 0 #141414, 
+          0px 15px 0 #121212,
+          2px 20px 5px rgba(0, 0, 0, 0.9),
+          5px 23px 5px rgba(0, 0, 0, 0.3),
+          8px 27px 8px rgba(0, 0, 0, 0.5),
+          8px 28px 35px rgba(0, 0, 0, 0.9);
+}
+/**********NAV BAR LEFT SIDE*********/
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: white;
+  }
+  
+  .hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 70%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
+
+body{
+    background-color: black;
+    width:20000px;
+    height: 20000px;
+    overflow-x: hidden;
+}
+#fusee{
+    width: 10rem;
+    height: 10rem;
+    z-index: 3; 
+}
+#conteneurFusee{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:20000px;
+    left: 10000px;
+    width: fit-content;
+    height: fit-content;
+    z-index: 3;
+} 
+#conteneurCentre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 19300px;
+    left: 5050px;
+}
+#SelecteurAnnee{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    align-items: center;
+}
+#centreGauche{ 
+    font-size: 1rem;
+    width: 12rem;
+    color: white;
+    height: fit-content;
+    background-color: rgba(32, 31, 31, 0.612);
+    padding: 2rem;
+    margin-right: 15rem;
+    border-radius: 2.5rem;
+    border:solid 2px white;
+}
+#centreGauche h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#center{
+    width: 50rem;
+    height: fit-content;
+    color: white;
+    background-color: rgba(32, 31, 31, 0.612);
+    padding: 2rem;
+    border-radius: 2.5rem;
+    border:solid 2px white;
+}
+#centreAuteur{
+    display: flex;
+    flex-direction: row;
+}
+#portrait{
+    width: 12rem;
+    height: 7.5rem;
+    border:solid 2px white;
+    border-radius: 2.5rem;
+}
+#tuto{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    bottom: 5rem;
+    right: 5rem;
+}
+#tuto img{
+    width: 15rem;
+    height: 10rem;
+    animation-duration: 1s;
+    animation-name: clignoter;
+    animation-iteration-count: 2;
+    transition: none;
+}
+
+ @keyframes clignoter {
+   0%   { opacity:1; }
+   50% {opacity:0;  }
+   100% { opacity:1; }
+ }
+#tuto p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+h1{
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+    
+}
+#txt{
+    font-size: 1.1rem;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 5rem;
+    bottom: 5rem;
+}
+nav a{
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    font-size:1.5rem ;
+    text-decoration: none;
+    padding:2rem 0;
+}
+
+
+
+/***********BURGER MENU********/
+#responsiveHeader img{
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    top: 1rem;
+  }
+  #menu{
+    background-color: white;
+    border:solid 2px black;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    padding:0rem 2rem;
+    top: 6rem;
+    left: 1rem;
+    font-weight: bold;
+  }
+  #responsiveHeader{  
+    display: none;
+  }
+  .burgerMenuItem{
+    padding: 1rem;
+  }
+  .burgerMenuItem>a{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: black;
+  }
+  
+/***PROJET 1********/
+#projet1{
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    padding: 2rem;
+    left: 5500px;
+    top: 18200px;
+    z-index: 0;
+}
+#projet1Img{
+    position: relative;
+    top: 17200px;
+    left: 5590px;
+    width: 40rem;
+    height: 40rem;
+    background-image: url("image/planete.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*******PROJET 2******/
+#projet2{
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    padding: 2rem;
+    left: 5500px;
+    top: 16200px;
+}
+#projet2Img{
+    position: relative;
+    top: 15200px;
+    left: 5590px;
+    width: 30rem;
+    height: 30rem;
+    background-image: url("image/planete2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*******PROJET 3******/
+#projet3{
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    padding: 2rem;
+    left: 5500px;
+    top: 14200px;
+}
+#projet3Img{
+    position: relative;
+    top: 13200px;
+    left: 5590px;
+    width: 40rem;
+    height: 40rem;
+    background-image: url("image/planete3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*******PROJET 4******/
+#projet4{
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    padding: 2rem;
+    left: 5500px;
+    top: 12200px;
+}
+#projet4Img{
+    position: relative;
+    top: 11200px;
+    left: 5590px;
+    width: 30rem;
+    height: 30rem;
+    background-image: url("image/planete4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*******PROJET 5******/
+#projet5{
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    padding: 2rem;
+    left: 5500px;
+    top: 10200px;
+}
+#projet5Img{
+    position: relative;
+    top: 9200px;
+    left: 5500px;
+    width: 50rem;
+    height: 50rem;
+    background-image: url("image/planete5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*******PROJET 6******/
+#projet6{
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    padding: 2rem;
+    left: 5500px;
+    top: 8100px;
+}
+#projet6Img{
+    position: relative;
+    top: 7200px;
+    left: 5590px;
+    width: 40rem;
+    height: 40rem;
+    background-image: url("image/planete6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*******PROJET 7******/
+#projet7{
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    padding: 2rem;
+    left: 5500px;
+    top: 6200px;
+}
+#projet7Img{
+    position: relative;
+    top: 5200px;
+    left: 5590px;
+    width: 40rem;
+    height: 40rem;
+    background-image: url("image/planete7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*******PROJET 8******/
+#projet8{
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    padding: 2rem;
+    left: 5500px;
+    top: 4200px;
+}
+#projet8Img{
+    position: relative;
+    top: 3200px;
+    left: 5590px;
+    width: 35rem;
+    height: 35rem;
+    background-image: url("image/planete8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#conteneurProjet1{
+    position: absolute;
+    top: 18200px;
+    left: 6250px;
+}
+#conteneurProjet2{
+    position: absolute;
+    top: 17200px;
+    left: 6250px;
+}
+#conteneurProjet3{
+    position: absolute;
+    top: 16000px;
+    left: 6250px;
+}
+#conteneurProjet4{
+    position: absolute;
+    top: 14800px;
+    left: 6250px;
+}
+#conteneurProjet5{
+    position: absolute;
+    top: 13800px;
+    left: 6250px;
+}
+#conteneurProjet6{
+    position: absolute;
+    top: 12800px;
+    left: 6250px;
+}
+#conteneurProjet7{
+    position: absolute;
+    top: 11800px;
+    left: 6250px;
+}
+#conteneurProjet8{
+    position: absolute;
+    top: 10800px;
+    left: 6250px;
+}
+
+.conteneurProjet{
+    color: white;
+    background-color: rgba(32, 31, 31, 0.612);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2.5rem;
+    border:solid 2px white;
+    opacity: 0;
+}
+.conteneurProjetImg{
+    width: 22rem;
+    height: 14rem;
+    border-radius: 2.5rem;
+    box-shadow: 1px 1px 12px white;
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate( 0deg );   }
+    to   { -moz-transform: rotate( 360deg ); }
+  }
+
+@keyframes rotate {
+  from { transform: rotate( 0deg );   }
+  to   { transform: rotate( 360deg ); }
+}
+
+.planete {
+    -webkit-animation: rotate 15s linear infinite ;
+    -moz-animation: rotate 15s linear infinite ;
+    -ms-animation: rotate 15s linear infinite ;
+    -o-animation: rotate 15s linear infinite ;
+}
+.asteroide {
+    -webkit-animation: rotate 20s linear infinite ;
+    -moz-animation: rotate 20s linear infinite ;
+    -ms-animation: rotate 20s linear infinite ;
+    -o-animation: rotate 20s linear infinite ;
+}
+.link{
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 3rem 0;
+    text-decoration: none;
+    border-radius: 3rem;
+    padding:1rem 2rem;
+    width:fit-content;
+    height: fit-content;
+    background-color: red;
+}
+.link2{
+    margin: 0;
+}
+.link2:hover{
+    border: solid white 2px;
+}
+#centerR{
+    display: none;
+}
+#responsiveHeader{
+    display: none;
+}
+#imageResp{
+    display: none;
+}
+#boutonResp{
+    display: none;
+}
+
+#moreProject{
+    position: absolute;
+    top: 9800px;
+    left: 5350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: auto;
+    flex-direction: row;
+    border: solid white 2px;
+    border-radius: 2rem;
+    background-color: rgba(32, 31, 31, 0.612);
+}
+#moreProjectTitle{
+    position: relative;
+    top: 2200px;
+    width: fit-content;
+    left: 5550px;
+    font-size: 4rem;
+}
+
+.imageProjetSup{
+    width: 15rem;
+    border: solid 2px white;
+    border-radius: 2rem;
+    box-sizing: border-box;
+}
+.lienImg{
+    width: 15rem;
+    margin: 2rem;
+}
+.imageProjetSup:hover{
+    border: red solid 2px;
+}
+/***************RESPONSIVE*************/
+
+
+@media screen and (max-width: 1440px){
+    #zoneDepart{
+        left: 5250px;
+
+    }
+    #zoneDepart  img{
+        width: 40rem;
+    }
+    #centreAuteur *{
+
+        font-size: 1rem;
+    }
+    #center{
+        width: 35vw;
+    }
+    #txt{
+        font-size: 0.9rem;
+    }
+    #conteneurCentre{
+        top: 19400px;
+    }
+    #portrait{
+        width: 8rem;
+        height: 5rem;
+    }
+    #conteneurProjet1,#conteneurProjet2,#conteneurProjet3,#conteneurProjet4,#conteneurProjet5,#conteneurProjet6,#conteneurProjet7,#conteneurProjet8{
+        left: 5250px;
+    }
+    .conteneurProjet{
+        padding: 0.5rem;
+    }
+    .conteneurProjetImg{
+        width: 13rem;
+        height: 8rem;
+        border-radius: 2.5rem;
+        box-shadow: 1px 1px 12px white;
+    }
+    #projet1Img,#projet2Img,#projet3Img,#projet4Img,#projet5Img,#projet6Img,#projet7Img,#projet8Img{
+        left: 5150px;
+    }
+    #projet1,#projet2,#projet3,#projet4,#projet5,#projet6,#projet7,#projet8{
+        left: 5150px;
+    }
+    #conteneurProjet1{
+        top: 18400px;
+    }
+    #conteneurProjet2{
+        top: 17400px;
+    }
+    #conteneurProjet3{
+        top: 16200px;
+    }
+    #conteneurProjet4{
+        top: 15000px;
+    }
+    #conteneurProjet5{
+        top: 14000px;
+    }
+    #conteneurProjet6{
+        top: 13000px;
+    }
+    #conteneurProjet7{
+        top: 12000px;
+    }
+    #conteneurProjet8{
+        top: 11000px;
+    }
+}
+@media screen and (max-width: 974px) {
+    #center{
+        width: 25vw;
+    }
+    #txt{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 842px) {
+    #responsiveHeader{
+        display: block;
+      position:fixed;
+      left: 2rem;
+    }
+    nav{
+      display: none;
+    }
+    #tuto{
+        display: none;
+    }
+    #centreGauche{
+        display: none;
+    }
+
+    #txt{
+        display: none;
+    }
+    #centreAuteur{
+        flex-direction: column;
+    }
+    #zoneDepart{
+        display: none;
+    }
+    #conteneurFusee{
+        display: none;
+    }
+    .conteneurProjet{
+        display: none;
+    }
+    body{
+        width: auto;
+        overflow-x: hidden;
+        height: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+
+    #conteneurCentre{
+        display: none;
+    }
+    .titreProjet{
+        display: none;
+        text-align: center;
+    }
+    #projet1Img,#projet2Img,#projet3Img,#projet4Img,#projet5Img,#projet6Img,#projet7Img,#projet8Img{
+        display: none;
+    }
+    #projet1,#projet2,#projet3,#projet4,#projet5,#projet6,#projet7,#projet8{
+        display: none;
+    }
+
+    #centerR{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top: 10rem;
+        height: fit-content;
+        color: white;
+        background-color: rgba(32, 31, 31, 0.612);
+        padding: 1rem;
+        border-radius: 2.5rem;
+        border:solid 2px white;
+        
+    }
+    #centerR *{
+        font-size: 1rem;
+    }
+    #imageResp{
+        display: flex;
+    }
+    #Accueil1Img{
+        width: 20rem;
+        height: 20rem;
+    }
+    #boutonResp{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .boutonR{
+        background-color: red;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 1rem;
+        margin-left: 1rem;
+        border-radius: 1rem;
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgb(255, 255, 255) 0px 0px 0px 1px inset;
+    }
+  }

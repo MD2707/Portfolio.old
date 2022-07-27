@@ -1,0 +1,203 @@
+*{
+    font-family:'Roboto', sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  background-color: white;
+  overflow-x:hidden;
+}
+
+/*****************FORMULAIRE*******/
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("image/asteroide.png");
+  background-position: center;
+          background-repeat: no-repeat;
+          background-size:contain;
+  width: fit-content;
+  height: fit-content;
+  padding: 14rem;
+}
+input, textarea{
+  width: 15rem;
+  margin :1rem 0;
+}
+
+input:valid{
+  border-color: green;
+}
+input:invalid{
+  border-color: red;
+}
+#buttonFormDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  font-weight: bold;
+  color: white;
+  height:3rem ;
+  width: 9rem;
+  border:none;
+  border-radius: 5rem;
+}
+
+#boutonFormImg{
+  display: none;
+  align-self: center;
+  width: 2rem;
+  height: 2rem;
+}
+#boutonFormImg2{
+  display:none;
+  align-self: center;
+  width: 2rem;
+  height: 2rem;
+}
+#buttonForm{
+  background-color: #222222;
+  font-weight: bold;
+  color: white;
+  border:none;
+  font-size: 1rem;
+  padding:0 1rem ;
+}
+
+.formItem{
+  border-radius: 2rem;  
+}
+#containerForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid #222222 0.20rem;
+  background-color: black;
+}
+input{
+  height: 2rem;
+}
+textarea{
+  text-align: center;
+  border-radius: 2rem;  
+}
+
+/********BARRE DE NAVIGATION********/
+header{
+  font-weight: bold;
+  padding:2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  margin:0 10%;
+}
+
+
+.button {
+  display: inline-block;
+  text-align: center;
+  background-color: #1a1e24;
+  color: var(--bg);
+  font-weight: bold;
+  padding: 1.18em 1.32em 1.03em;
+  line-height: 1;
+  border-radius: 1em;
+  position: relative;
+  min-width: 8.23em;
+  text-decoration: none;
+  font-family:'Roboto', sans-serif;
+  font-size: 1.25rem;
+}
+
+
+
+/********FOOTER*******/
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  padding: 5rem;
+  background-color:#333 ;
+}
+#footerDiv p{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+#footerA a{
+  color: white;
+  font-weight: bold;
+}
+
+#responsiveHeader img{
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+  position: fixed;
+}
+#menu{
+  background-color: white;
+  border:solid 2px black;
+  height: 7rem;
+  width: 5rem;
+  display: none;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  padding:0 2rem;
+  top: 5rem;
+  font-weight: bold;
+}
+#responsiveHeader{  
+  display: none;
+}
+.burgerMenuItem{
+  padding: 1rem;
+}
+.burgerMenuItem>a{
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+#titreResponsive{
+  display: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  width: fit-content;
+  margin-top: 7rem;
+  align-items: center;
+  margin-left: 2rem;
+  text-decoration: underline;
+  text-decoration-color: #222222;
+}
+/***************RESPONSIVE*************/
+@media screen and (max-width: 1667px) {
+  *{
+      overflow-x: hidden;
+  }
+  #responsiveHeader{
+    display: flex;
+    margin-bottom: 5rem;
+  }
+  header{
+    display: none;
+  }
+  #titreResponsive{
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  footer{
+    display: none;
+  }
+}

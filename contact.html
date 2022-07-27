@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styleContact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="form.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a class="button" href="index.html">Accueil</a>
+        </div>
+        <div>
+            <a class="button" href="projet.html">Projets</a>
+        </div>
+    </header>
+    <div id="responsiveHeader">
+        <div>
+            <img src="image/menu.png" onclick="onClickMenu()" alt="menu">
+        </div>
+        <div id="menu">
+            <div  class="burgerMenuItem">
+                <a href="index.html">Accueil</a>
+            </div>
+            <div  class="burgerMenuItem">
+                <a href="projet.html">Projet</a>
+            </div>
+        </div>
+    </div>
+    <div id="titreResponsive">Besoin de me Contacter ?</div>
+   
+    <div id="containerForm">
+        <form action="https://formsubmit.co/mathias.duprat@live.com" method="POST" enctype="multipart/form-data">
+            <input class="formItem" type="text" name="name" required placeholder="  Nom">
+            <input class="formItem" type="text" name="prenom" required placeholder="  Prénom">
+            <input class="formItem" type="email" name="email" required placeholder="  example.mail@gmail.com">
+            <textarea name="message"rows="5" cols="33" required placeholder="Votre message..."></textarea>
+            <input type="file" name="fichier" accept="image/png, image/jpeg">
+            <input type="hidden" name="_next" value="https://md2707.github.io/PortfolioMD">
+            <div id="buttonFormDiv">
+                <button id="buttonForm" type="submit" onclick="validForm()">Send</button>
+                <img id="boutonFormImg" src="image/valid.png" alt="valid">
+                <img id="boutonFormImg2" src="image/cross.png" alt="error">
+            </div>
+        </form> 
+    </div>
+    <footer>
+        <div id="footerDiv">
+            <p>Copyright Mathias Duprat 2022</p>
+        </div>
+        <div id="footerA">
+            <a href="mentionLegal.html">mention légales</a>
+        </div>
+    </footer>   
+</body>
+</html>
