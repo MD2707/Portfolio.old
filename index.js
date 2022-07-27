@@ -200,7 +200,7 @@ function choixAnnee(idAnnee){
         //la liste des titres pour l'année choisit
         let tabTitreProjetFinal = ['La Station Meteo', 'Pong', "Lowatem", 'Creation d\'Entreprise',"Nerd.it", "Creation base de donée", "Atelier JPO", "Workon", "Plus de projet" ];
         //la liste des noms d'images pour l'année choisit 
-        let tabImageSource=['meteo.png','pong.png','lowatem.png','nerditEntreprise.png','nerdit.png','bd.png',"terrain.png","meteo.png", "meteo.png", "meteo.png"]
+        let tabImageSource=['meteo.png','pong.png','lowatem.png','nerditEntreprise.png','nerdit.png','bd.png',"terrain.PNG","meteo.png", "meteo.png", "meteo.png"]
         //la liste des fichiers pdf pour chaque projet
         let tabProjetPdfFinal =['stationMeteo.pdf','pong.pdf','Lowatem.pdf','nerdit.pdf','nerdit.pdf','creationBD.pdf','atelierProcessing.pdf','Workon.pdf','Workon.pdf','Workon.pdf']
         //changement de titre
