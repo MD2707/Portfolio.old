@@ -1,3 +1,26 @@
+#SelectionAnnee{
+    width: 100%;
+    height: 200%;
+    background-color: black;
+}
+#SelecteurAnnee{
+    position: relative;
+    top: 19720px;
+    left: 5350px;
+    width: 50rem;
+    height: 20rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(32, 31, 31, 0.612);
+    padding: 2rem;
+    border-radius: 2.5rem;
+    border:solid 2px white;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 #zoneDepart{
     width: 50rem;
     height: 20rem;
@@ -71,7 +94,7 @@ body{
 }
 #conteneurFusee{
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     top:20000px;
@@ -130,7 +153,7 @@ body{
 }
 #tuto{
     position: fixed;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     width: fit-content;
@@ -167,7 +190,7 @@ h1{
     font-size: 1.1rem;
 }
 nav{
-    display: flex;
+    display: none;
     flex-direction: column;
     position: fixed;
     left: 5rem;
@@ -489,16 +512,7 @@ nav a{
 .link2:hover{
     border: solid white 2px;
 }
-#centerR{
-    display: none;
-}
-#responsiveHeader{
-    display: none;
-}
-#imageResp{
-    display: none;
-}
-#boutonResp{
+#centerR,#responsiveHeader,#imageResp,#boutonResp{
     display: none;
 }
 
@@ -609,6 +623,11 @@ nav a{
         top: 11000px;
     }
 }
+@media screen and (max-width: 1242px) {
+    #SelecteurAnnee{
+        width: 25rem;
+    }
+}
 @media screen and (max-width: 974px) {
     #center{
         width: 25vw;
@@ -623,30 +642,11 @@ nav a{
       position:fixed;
       left: 2rem;
     }
-    nav{
+    nav, #tuto,#centreGauche,#txt,#zoneDepart,#conteneurFusee,.conteneurProjet,#conteneurCentre{
       display: none;
-    }
-    #tuto{
-        display: none;
-    }
-    #centreGauche{
-        display: none;
-    }
-
-    #txt{
-        display: none;
     }
     #centreAuteur{
         flex-direction: column;
-    }
-    #zoneDepart{
-        display: none;
-    }
-    #conteneurFusee{
-        display: none;
-    }
-    .conteneurProjet{
-        display: none;
     }
     body{
         width: auto;
@@ -656,10 +656,6 @@ nav a{
        flex-direction: column;
        align-items: center;
        justify-content: center;
-    }
-
-    #conteneurCentre{
-        display: none;
     }
     .titreProjet{
         display: none;
@@ -710,5 +706,9 @@ nav a{
         margin-left: 1rem;
         border-radius: 1rem;
         box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgb(255, 255, 255) 0px 0px 0px 1px inset;
+    }
+
+    #SelectionAnnee,#moreProject,#moreProject,#moreProjectTitle{
+        display: none;
     }
   }

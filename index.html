@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
     <link rel="stylesheet" href="styleIndex.css">
-    <script>window.onload = function(e){functionViewOnLoad()};
-    window.onbeforeunload = function(e){functionViewOnLoad()}</script>
+    <script>window.onload = function(e){functionViewOnLoad()};</script>
     <title>Portfolio Duprat Mathias</title>
+    <script> sessionStorage.setItem('YearIsChose', 'false');</script>
 </head>
-
+<div id="SelectionAnnee">
+    <div id="SelecteurAnnee">
+        <p>Selectionnez une Année :</p> 
+        <div>
+            <a class="link link2" id="2021-2022" onclick="choixAnnee(this.id) ">2021-2022</a>
+        </div>
+        <div>
+            <a onclick="choixAnnee(this.id)" class="link link2"id="2022-2023">2022-2023</a>
+        </div>
+    </div>
+</div>
 <div id="responsiveHeader">
     <div>
-        <img src="image/burgerMenu.png" onclick="onClickMenu()" alt="menu">
+        <img src="image/burgerMenu.png"  onclick="onClickMenu()" alt="menu">
     </div>
     <div id="menu">
         <div class="burgerMenuItem">
@@ -27,7 +37,7 @@
         </div>
     </div>
 </div>
-<body onkeydown="maFonction(event)">  
+<body onkeydown=" if (sessionStorage.getItem('YearIsChose') == 'true' ) maFonction(event)">  
     <div id="fondPage">
         <div id="conteneurFusee"><img id="fusee" src="image/fusee.png" alt="fusee"> </div></div>
         <div id="zoneDepart" ><img class="asteroide" src="image/asteroide.png" alt="aseteroide" ></div>
@@ -44,9 +54,7 @@
                         <div><img id="portrait" src="image/portrait.png" alt="portrait"></div>
                     </div>
                     <p id="txt">Ce site web vous permet de mieux me connaitre, à travers mes loisirs, mes études ainsi que mes projets personnels. Il est developpé en HTML, CSS et JavaScript. Bonne visite et pour toute demande n'hésitez pas à me contacter ! </p>
-                    <div id="SelecteurAnnee">
-                        <p>Selectionnez une Année :</p> <a class="link link2" id="2021-2022" onclick="choixAnnee(this.id)">2021-2022</a><a onclick="choixAnnee(this.id)" class="link link2"id="2022-2023">2022-2023</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -71,7 +79,7 @@
 
         <!--Fin responsive  a afficher avec media screen-->
 
-            <nav>
+            <nav id="leftNav">
                 <a class="hover-underline-animation" href="index.html">CV</a>
                 <a class="hover-underline-animation" href="projet.html">Projet</a>
                 <a class="hover-underline-animation" href="contact.html">Contact</a>

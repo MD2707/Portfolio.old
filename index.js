@@ -189,7 +189,12 @@ function supprimerFumee(){
 }
 
 function choixAnnee(idAnnee){
-    document.getElementById("SelecteurAnnee").style.display="none"
+    sessionStorage.setItem('YearIsChose', 'true')
+    document.getElementById("SelectionAnnee").style.display="none"
+    document.getElementById("leftNav").style.display="flex"
+    document.getElementById("tuto").style.display="flex"
+    document.getElementById("conteneurFusee").style.display="flex"
+    
     let tabImageProject =  document.getElementsByClassName("projectImageForaYear")
     let tabTitre = document.getElementsByClassName("titreProjet")
     let tabProjetPdf = document.getElementsByClassName("linkProject")
