@@ -541,6 +541,7 @@ nav a{
 
 .imageProjetSup{
     width: 15rem;
+    height: 10rem;
     border: solid 2px white;
     border-radius: 2rem;
     box-sizing: border-box;

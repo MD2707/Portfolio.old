@@ -205,15 +205,18 @@ function choixAnnee(idAnnee){
         //la liste des titres pour l'année choisit
         let tabTitreProjetFinal = ['La Station Meteo', 'Pong', "Lowatem", 'Creation d\'Entreprise',"Nerd.it", "Creation base de donée", "Atelier JPO", "Workon", "Plus de projet" ];
         //la liste des noms d'images pour l'année choisit 
-        let tabImageSource=['meteo.png','pong.png','lowatem.png','nerditEntreprise.png','nerdit.png','bd.png',"terrain.PNG","meteo.png", "meteo.png", "meteo.png"]
+        let tabImageSource=['meteo.png','pong.png','lowatem.png','nerditEntreprise.png','nerdit.png','bd.png',"terrain.PNG","workon.png", "DevLight.png", "outilVisu.png"]
         //la liste des fichiers pdf pour chaque projet
-        let tabProjetPdfFinal =['stationMeteo.pdf','pong.pdf','Lowatem.pdf','nerdit.pdf','nerdit.pdf','creationBD.pdf','atelierProcessing.pdf','Workon.pdf','Workon.pdf','Workon.pdf']
+        let tabProjetPdfFinal =['stationMeteo.pdf','pong.pdf','Lowatem.pdf','nerdit.pdf','nerdit.pdf','creationBD.pdf','atelierProcessing.pdf','Workon.pdf','devlight.pdf','outilVisu.pdf']
         //changement de titre
         changerTitre(tabTitre,tabTitreProjetFinal)
         //changement d'image
         changerImage(tabImageProject,tabImageSource)
         //changement de pdf
         changerPdf(tabProjetPdf,tabProjetPdfFinal)
+
+        document.getElementsByClassName("lienImg")[0].href="pdf/devlight.pdf#zoom=80"
+        document.getElementsByClassName("lienImg")[1].href="pdf/outilVisu.pdf#zoom=80"
     }
     if(idAnnee=="2022-2023"){
         //change le titre de l'accueil
