@@ -178,6 +178,28 @@ header{
     color: #2020e9;
     font-size: 1.5rem;
 }
+
+/*9*/
+#span9{
+    color: #f8d612;
+    font-size: 1.5rem;
+}
+
+#texteLien9{
+    color: #f8d612;
+    font-size: 1rem;
+}
+
+/*10*/
+#span10{
+    color: #289DD7;
+    font-size: 1.5rem;
+}
+
+#texteLien10{
+    color: #289DD7;
+    font-size: 1rem;
+}
 /***********EFFET SUR LES IMAGES***********/
 .container {
     position: relative;
