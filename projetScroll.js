@@ -25,3 +25,17 @@ function onClickMenu(){
     else
     doc.style.display="none";
   }
+
+  function choixAnnee(idAnnee){
+     document.getElementById("footer").style.display="flex";
+    var tabtotal = document.getElementsByClassName("pres");
+    var tabtotal2= document.getElementsByClassName("pres2");
+    for(j=0;j<tabtotal.length;j++){
+        tabtotal[j].style.display="none"
+    }
+    for(j=0;j<tabtotal2.length;j++){
+        tabtotal2[j].style.display="none"
+    }
+    var tabProjet= document.getElementsByClassName(idAnnee);
+        for(i=0;i<tabProjet.length;i++) tabProjet[i].style.display="flex";
+}
