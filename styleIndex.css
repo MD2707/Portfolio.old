@@ -506,6 +506,10 @@ nav a{
     height: fit-content;
     background-color: red;
 }
+
+.listeProjet{
+    display: none;
+}
 .link2{
     margin: 0;
 }

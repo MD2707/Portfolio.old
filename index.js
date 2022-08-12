@@ -199,6 +199,7 @@ function choixAnnee(idAnnee){
     let tabTitre = document.getElementsByClassName("titreProjet")
     let tabProjetPdf = document.getElementsByClassName("linkProject")
     //ANNEE 2021 - 2022 
+
     if(idAnnee=="2021-2022"){
         //change le titre de l'accueil
         document.getElementById("mainTitle").innerHTML +=" (2021-2022)"
@@ -208,23 +209,42 @@ function choixAnnee(idAnnee){
         let tabImageSource=['meteo.png','pong.png','lowatem.png','nerditEntreprise.png','nerdit.png','bd.png',"terrain.PNG","workon.png", "DevLight.png", "outilVisu.png"]
         //la liste des fichiers pdf pour chaque projet
         let tabProjetPdfFinal =['stationMeteo.pdf','pong.pdf','Lowatem.pdf','nerdit.pdf','nerdit.pdf','creationBD.pdf','atelierProcessing.pdf','Workon.pdf','devlight.pdf','outilVisu.pdf']
+        //projet supplémentaire
+        document.getElementsByClassName("lienImg")[0].href="pdf/devlight.pdf#zoom=80"
+        document.getElementsByClassName("lienImg")[1].href="pdf/outilVisu.pdf#zoom=80"
+
+        modifierProjet(tabTitre,tabTitreProjetFinal,tabImageProject,tabImageSource,tabProjetPdf,tabProjetPdfFinal);
+        afficherProjet(tabProjetPdfFinal)
+    }
+    if(idAnnee=="2022-2023"){
+        //change le titre de l'accueil
+        document.getElementById("mainTitle").innerHTML +=" (2022-2023)"
+         //la liste des titres pour l'année choisit
+         let tabTitreProjetFinal = [];
+         //la liste des noms d'images pour l'année choisit 
+         let tabImageSource=[]
+         //la liste des fichiers pdf pour chaque projet
+         let tabProjetPdfFinal =[]
+        modifierProjet(tabTitre,tabTitreProjetFinal,tabImageProject,tabImageSource,tabProjetPdf,tabProjetPdfFinal)
+        afficherProjet(tabProjetPdfFinal)
+    }
+}
+
+function modifierProjet(tabTitre,tabTitreProjetFinal,tabImageProject,tabImageSource,tabProjetPdf,tabProjetPdfFinal){
         //changement de titre
         changerTitre(tabTitre,tabTitreProjetFinal)
         //changement d'image
         changerImage(tabImageProject,tabImageSource)
         //changement de pdf
         changerPdf(tabProjetPdf,tabProjetPdfFinal)
-
-        document.getElementsByClassName("lienImg")[0].href="pdf/devlight.pdf#zoom=80"
-        document.getElementsByClassName("lienImg")[1].href="pdf/outilVisu.pdf#zoom=80"
-    }
-    if(idAnnee=="2022-2023"){
-        //change le titre de l'accueil
-        document.getElementById("mainTitle").innerHTML +=" (2022-2023)"
-    }
 }
 
-
+function afficherProjet(tabProjetPdfFinal){
+    let tabProjetDisplayed =  document.getElementsByClassName("listeProjet")
+    for(i=0;i<tabProjetPdfFinal.length;i++){
+    tabProjetDisplayed[i].style.display="block";
+    }
+}
 function changerTitre(tabDebut,tabFinal){
     for(var i=0; i<tabDebut.length;i++){
         tabDebut[i].innerHTML =tabFinal[i]
