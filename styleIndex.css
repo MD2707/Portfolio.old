@@ -86,6 +86,7 @@ body{
     width:20000px;
     height: 20000px;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 #fusee{
     width: 10rem;

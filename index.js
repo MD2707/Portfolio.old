@@ -119,6 +119,7 @@ function animConteneurProjet(){
     }
 }
 
+
 function onClickMenu(){
     var doc=document.getElementById("menu");
     var etat= doc.style.display;
