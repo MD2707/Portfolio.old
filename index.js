@@ -197,8 +197,8 @@ function choixAnnee(idAnnee){
     if (!isMobile) {
         document.getElementById("tuto").style.display="flex"
         document.getElementById("leftNav").style.display="flex";
-        document.getElementById("conteneurJoystick").style.display="none";
     }
+    if(isMobile)document.getElementById("conteneurJoystick").style.display="flex";
     sessionStorage.setItem('YearIsChose', 'true')
     document.getElementById("SelectionAnnee").style.display="none"
     document.getElementById("conteneurFusee").style.display="flex"

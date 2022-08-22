@@ -98,6 +98,7 @@ class JoystickController
 		    self.touchId = null;
 		    self.active = false;
 		}
+		let joystick1 = new JoystickController("stick1", 64, 8);
 
 		stick.addEventListener('mousedown', handleDown);
 		stick.addEventListener('touchstart', handleDown);
