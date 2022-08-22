@@ -163,6 +163,7 @@ body{
     right: 5rem;
 }
 #tuto img{
+    display: none;
     width: 15rem;
     height: 10rem;
     animation-duration: 1s;
