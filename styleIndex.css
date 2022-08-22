@@ -517,10 +517,6 @@ nav a{
 .link2:hover{
     border: solid white 2px;
 }
-#centerR,#responsiveHeader,#imageResp,#boutonResp{
-    display: none;
-}
-
 #moreProject{
     position: absolute;
     top: 9800px;
@@ -558,6 +554,21 @@ nav a{
 .imageProjetSup:hover{
     border: red solid 2px;
 }
+
+#stick1{
+    position: absolute; 
+    left:32px; 
+    top:32px;
+}
+#conteneurJoystick{
+    display: none;
+    border: 1px solid red; 
+    width: 128px; 
+    position: fixed; 
+    bottom: 5rem;
+    right: 5rem;
+}
+  
 /***************RESPONSIVE*************/
 
 
@@ -582,10 +593,7 @@ nav a{
     #conteneurCentre{
         top: 19400px;
     }
-    #portrait{
-        width: 8rem;
-        height: 5rem;
-    }
+
     #conteneurProjet1,#conteneurProjet2,#conteneurProjet3,#conteneurProjet4,#conteneurProjet5,#conteneurProjet6,#conteneurProjet7,#conteneurProjet8{
         left: 5250px;
     }
@@ -643,78 +651,10 @@ nav a{
     }
 }
 @media screen and (max-width: 842px) {
-    #responsiveHeader{
-        display: block;
-      position:fixed;
-      left: 2rem;
-    }
-    nav, #tuto,#centreGauche,#txt,#zoneDepart,#conteneurFusee,.conteneurProjet,#conteneurCentre{
-      display: none;
-    }
-    #centreAuteur{
-        flex-direction: column;
-    }
-    body{
-        width: auto;
-        overflow-x: hidden;
-        height: auto;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-    }
-    .titreProjet{
-        display: none;
-        text-align: center;
-    }
-    #projet1Img,#projet2Img,#projet3Img,#projet4Img,#projet5Img,#projet6Img,#projet7Img,#projet8Img{
+    #tuto{
         display: none;
     }
-    #projet1,#projet2,#projet3,#projet4,#projet5,#projet6,#projet7,#projet8{
-        display: none;
-    }
-
-    #centerR{
+    #conteneurJoystick{
         display: flex;
-        flex-direction:column;
-        align-items: center;
-        margin-top: 10rem;
-        height: fit-content;
-        color: white;
-        background-color: rgba(32, 31, 31, 0.612);
-        padding: 1rem;
-        border-radius: 2.5rem;
-        border:solid 2px white;
-        
-    }
-    #centerR *{
-        font-size: 1rem;
-    }
-    #imageResp{
-        display: flex;
-    }
-    #Accueil1Img{
-        width: 20rem;
-        height: 20rem;
-    }
-    #boutonResp{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .boutonR{
-        background-color: red;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        padding: 1rem;
-        margin-left: 1rem;
-        border-radius: 1rem;
-        box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgb(255, 255, 255) 0px 0px 0px 1px inset;
-    }
-
-    #SelectionAnnee,#moreProject,#moreProject,#moreProjectTitle{
-        display: none;
     }
   }

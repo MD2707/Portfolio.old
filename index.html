@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
+    <script src="joystick.js"></script>
     <link rel="stylesheet" href="styleIndex.css">
     <script>window.onload = function(e){functionViewOnLoad()};</script>
     <title>Portfolio Duprat Mathias</title>
@@ -58,31 +59,18 @@
                 </div>
             </div>
         </div>
-        <!--Partie responsive  a afficher avec media screen-->
-        <div id="centerR">
-            <div>
-                <div id="centreAuteurR">
-                    <h1>Bienvenue sur mon Portfolio</h1>
-                    <div><img id="portrait" src="image/portrait.png" alt="portrait"></div>
-                </div>
-                <p id="txt">Ce site web vous permet de mieux me connaitre, à travers mes loisirs, mes études ainsi que mes projets personnels. Il est developpé en HTML, CSS et JavaScript. Bonne visite et pour toute demande n'hésitez pas à me contacter ! </p>
-            </div>
-        </div>
-        
-        <div id="imageResp">
-            <img  id="Accueil1Img" class="planete" src="image/planete.png" alt="planete">
-        </div>
-        <div id="boutonResp">
-            <a class="boutonR" href="projet.html">Projet</a>
-            <a class="boutonR" href="contact.html">Me Contacter</a>
-        </div>
-
-        <!--Fin responsive  a afficher avec media screen-->
-
             <nav id="leftNav">
                 <a class="hover-underline-animation" href="projet.html">Projet</a>
                 <a class="hover-underline-animation" href="contact.html">Contact</a>
             </nav>
+        <!--Joystik for mobile version-->
+        <div id="conteneurJoystick">
+            <img src="image/joystick-base.png"/>
+            <div id="stick1">
+            <img src="image/joystick-red.png"/>		
+            </div>
+        </div>
+
         <div id="tuto">
             <p>Touches</p>
             <img src="image/fleche.png" alt="fleche">
