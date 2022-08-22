@@ -183,10 +183,12 @@
         </div>
     </div>
     <script>
-        //réduit le nombre d'élement de fumée sur l'écran
-        setInterval(supprimerFumee, 100);
-        let joystick1 = new JoystickController("stick1", 64, 8);
-        loop()
+         if (sessionStorage.getItem('YearIsChose') == 'true'){
+            //réduit le nombre d'élement de fumée sur l'écran
+            setInterval(supprimerFumee, 100);
+            let joystick1 = new JoystickController("stick1", 64, 8);
+            loop()
+        }
     </script>
 </body>
 </html>
