@@ -163,7 +163,6 @@ body{
     right: 5rem;
 }
 #tuto img{
-    display: none;
     width: 15rem;
     height: 10rem;
     animation-duration: 1s;
@@ -657,5 +656,12 @@ nav a{
     }
     #conteneurJoystick{
         display: flex;
+    }
+    #responsiveHeader{
+        display: flex;
+
+    }
+    #leftNav{
+        display: none;
     }
   }
