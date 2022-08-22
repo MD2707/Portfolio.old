@@ -16,9 +16,8 @@
     padding: 2rem;
     border-radius: 2.5rem;
     border:solid 2px white;
-
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 #zoneDepart{
@@ -112,12 +111,7 @@ body{
     top: 19300px;
     left: 5050px;
 }
-#SelecteurAnnee{
-    display: flex;
-    flex-direction:row ;
-    justify-content: space-around;
-    align-items: center;
-}
+
 #centreGauche{ 
     font-size: 1rem;
     width: 12rem;
@@ -566,9 +560,11 @@ nav a{
     width: 128px; 
     position: fixed; 
     bottom: 5rem;
-    right: 5rem;
+    left: 5rem;
 }
-  
+.conteneurBoutonLink{
+    margin: 2rem 0;
+}
 /***************RESPONSIVE*************/
 
 
@@ -654,8 +650,8 @@ nav a{
     #tuto{
         display: none;
     }
-    #conteneurJoystick{
-        display: flex;
+    #SelecteurAnnee{
+        width: 15rem;
     }
     #responsiveHeader{
         display: flex;
@@ -663,5 +659,8 @@ nav a{
     }
     #leftNav{
         display: none;
+    }
+    body{
+        width: fit-content;
     }
   }

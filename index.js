@@ -41,7 +41,8 @@ function maFonction(event){
     var element = document.getElementById("conteneurFusee");
     window.scroll(parseInt(element.style.left)- window.innerWidth/2.25,parseInt(element.style.top)-window.innerHeight/2.25); 
     animConteneurProjet();
-    displayProject(event);
+    if(event!=null){
+        displayProject(event);
     switch(event.code) {
         case "KeyS":
         case "ArrowDown":
@@ -70,6 +71,8 @@ function maFonction(event){
             break;
     }
     event.stopPropagation();
+    }
+    
 }
 function displayProject(event){
     var element = window.getComputedStyle(document.getElementById("conteneurFusee"));
@@ -86,7 +89,7 @@ function displayProject(event){
             && milieuY>parseInt(tmp.top)){
                  let lien = t.getElementsByClassName("link");
                  t.style.boxShadow ="white 0px 54px 55px, white 0px -12px 30px, white 0px 4px 6px, white 0px 12px 13px, white 0px -3px 5px";
-                if(event.keyCode == 13 || event.code=="Enter"){
+                if((event !=null && event.keyCode == 13 )||  (event.code!=null & event.code=="Enter")){
                     window.open(lien[0].href)
                 }
         }
@@ -190,11 +193,15 @@ function supprimerFumee(){
 }
 
 function choixAnnee(idAnnee){
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (!isMobile) {
+        document.getElementById("tuto").style.display="flex"
+        document.getElementById("leftNav").style.display="flex";
+        document.getElementById("conteneurJoystick").style.display="none";
+    }
     sessionStorage.setItem('YearIsChose', 'true')
     document.getElementById("SelectionAnnee").style.display="none"
-
     document.getElementById("conteneurFusee").style.display="flex"
-    
     let tabImageProject =  document.getElementsByClassName("projectImageForaYear")
     let tabTitre = document.getElementsByClassName("titreProjet")
     let tabProjetPdf = document.getElementsByClassName("linkProject")
