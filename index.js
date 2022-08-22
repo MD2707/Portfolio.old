@@ -193,7 +193,7 @@ function choixAnnee(idAnnee){
     sessionStorage.setItem('YearIsChose', 'true')
     document.getElementById("SelectionAnnee").style.display="none"
     document.getElementById("leftNav").style.display="flex"
-    document.getElementById("tuto").style.display="flex"
+    document.getElementById("tuto").style.display="none"
     document.getElementById("conteneurFusee").style.display="flex"
     
     let tabImageProject =  document.getElementsByClassName("projectImageForaYear")
