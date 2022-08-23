@@ -1,5 +1,10 @@
 let interval;
 
+function checkIfMobile(id){
+    if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) document.getElementById('2021-2022').href='indexMobile.html'
+    else choixAnnee(id)
+}
+
 function functionViewOnLoad() {
     window.scroll(10000-window.innerWidth/2,19900);
     var element = document.getElementById("conteneurFusee");
@@ -12,27 +17,23 @@ function leftArrowPressed(vitesse) {
     var element = document.getElementById("conteneurFusee");
     element.style.transform = 'rotate(-90deg)';
     element.style.left =(parseInt(element.style.left) - vitesse)+"px";
-    console.log("gauche");
 }
 function rightArrowPressed(vitesse) {
     var element = document.getElementById("conteneurFusee");
     element.style.transform = 'rotate(90deg)';
     element.style.left =(parseInt(element.offsetLeft) + vitesse)+"px";
 
-    console.log("droite");
 }
 function upArrowPressed(vitesse) {
     
     var element = document.getElementById("conteneurFusee");
     element.style.transform = 'rotate(0deg)';
     element.style.top = (parseInt(element.style.top) - vitesse)+"px";
-    console.log("haut");
 }
 function downArrowPressed(vitesse) {
     var element = document.getElementById("conteneurFusee");
     element.style.transform = 'rotate(180deg)';
     element.style.top = (parseInt(element.offsetTop) + vitesse)+"px";
-    console.log("bas");
 }
 
 function maFonction(event){
@@ -193,15 +194,12 @@ function supprimerFumee(){
 }
 
 function choixAnnee(idAnnee){
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if (!isMobile) {
-        document.getElementById("tuto").style.display="flex"
-        document.getElementById("leftNav").style.display="flex";
-    }
-    if(isMobile)document.getElementById("conteneurJoystick").style.display="flex";
+    document.getElementById("tuto").style.display="flex"
+    document.getElementById("leftNav").style.display="flex";
     sessionStorage.setItem('YearIsChose', 'true')
     document.getElementById("SelectionAnnee").style.display="none"
     document.getElementById("conteneurFusee").style.display="flex"
+    
     let tabImageProject =  document.getElementsByClassName("projectImageForaYear")
     let tabTitre = document.getElementsByClassName("titreProjet")
     let tabProjetPdf = document.getElementsByClassName("linkProject")

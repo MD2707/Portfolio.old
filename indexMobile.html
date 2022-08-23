@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<script src="joystick.js"></script>
+<link rel="stylesheet" href="styleMobile.css">
+<head>
+	<title>Joystick Controls</title>
+</head>
+<body>
+	<div id="responsiveHeader">
+		<div>
+			<img src="image/burgerMenu.png"  onclick="onClickMenu()" alt="menu">
+		</div>
+		<div id="menu">
+			<div class="burgerMenuItem">
+				<a  href="index.html">Accueil</a>
+			</div>
+			<div class="burgerMenuItem">
+				<a  href="projet.html">Projet</a>
+			</div>
+			<div class="burgerMenuItem">
+				<a  href="contact.html">Contact</a>
+			</div>
+		</div>
+	</div>
+	<div id="conteneurJoystick">
+		<img src="image/joystick-base.png"/>
+		<div id="stick1">
+		<img id="imgJoystick" src="image/joystick-red.png"/>		
+		</div>
+	</div>
+	<div id="conteneurFusee"><img id="fusee" src="image/fusee.png" alt="fusee"> </div></div>
+
+	<script>
+		let joystick1 = new JoystickController("stick1", 64, 8);
+		loop()
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+body
+	{
+		width: 2000px;
+		height: 10000px;
+        background-color: black;
+		font-family: Courier, monospaced;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	#conteneurFusee{
+    position: absolute;
+    display: flex;
+    top:9000px;
+    left: 750px;
+    width: fit-content;
+    height: fit-content;
+}
+#fusee{
+	width: 25rem;
+}
+#stick1{
+    position: absolute; 
+    left:82px; 
+    top:82px;
+}
+#conteneurJoystick{
+    border: 1px solid red; 
+    width:fit-content; 
+    position: fixed; 
+    bottom: 10rem;
+    right: 10rem;
+}
+#conteneurJoystick>img{
+    width: 25rem;
+}
+#imgJoystick{
+    width: 15rem;
+}
+
+
+
+/***********BURGER MENU********/
+#responsiveHeader img{
+    width: 7rem;
+    height: 7rem;
+    position: fixed;
+    top: 1rem;
+  }
+  #menu{
+    background-color: white;
+    border:solid 2px black;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    padding:0rem 2rem;
+    top: 6rem;
+    left: 1rem;
+    font-weight: bold;
+  }
+  .burgerMenuItem{
+    padding: 1rem;
+  }
+  .burgerMenuItem>a{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: black;
+  }
+  
