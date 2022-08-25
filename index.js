@@ -1,9 +1,5 @@
 let interval;
 
-function checkIfMobile(id){
-    if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) document.getElementById('2021-2022').href='indexMobile.html'
-    else choixAnnee(id)
-}
 
 function functionViewOnLoad() {
     window.scroll(10000-window.innerWidth/2,19900);
@@ -193,11 +189,11 @@ function supprimerFumee(){
         tab[10].remove()
 }
 
-function choixAnnee(idAnnee){
+function choixAnnee(){
+    idAnnee=sessionStorage.getItem('annee');
     document.getElementById("tuto").style.display="flex"
     document.getElementById("leftNav").style.display="flex";
     sessionStorage.setItem('YearIsChose', 'true')
-    document.getElementById("SelectionAnnee").style.display="none"
     document.getElementById("conteneurFusee").style.display="flex"
     
     let tabImageProject =  document.getElementsByClassName("projectImageForaYear")
