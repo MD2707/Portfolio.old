@@ -19,17 +19,17 @@
     <div id="menu">
         <nav>
             <div class="linkContainer">
-                <a class="link" onclick="displayAnnee()">Démarrer</a>
+                <a onclick="displayAnnee() "><img class="menuItem"  id="démarrerHover" src="image/démarrer.png" onmouseover="onHover(this.id)" onmouseout=" onDefault(id)"></a>
             </div>
             <div class="linkContainer">
-                <a class="link" href="contact.html" >Me contacter</a>
+                <a href="contact.html" ><img class="menuItem"  id="contactHover" src="image/contact.png" onmouseover="onHover(this.id)" onmouseout=" onDefault(id)"></a>
             </div>
             <div class="linkContainer">
-                <a class="link" href="mentionLegal.html" >Mention légale</a>
+                <a href="mentionLegal.html" ><img class="menuItem" id="mentionLegaleHover" src="image/mentionLegale.png" onmouseover="onHover(this.id)" onmouseout=" onDefault(id)"></a>
             </div>
         </nav>
     </div>
         <img id="asteroide" src="image/asteroide.png" alt="">
 </body>
-<script> setInterval(generateDot, 500); setInterval(supprimerElement, 800   )</script>
+<script> setInterval(generateDot, 200) </script>
 </html>

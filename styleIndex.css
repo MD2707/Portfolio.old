@@ -1,24 +1,3 @@
-#SelectionAnnee{
-    width: 100%;
-    height: 200%;
-    background-color: black;
-}
-#SelecteurAnnee{
-    position: relative;
-    top: 19720px;
-    left: 5350px;
-    width: 50rem;
-    height: 20rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: white;
-    background-color: rgba(32, 31, 31, 0.612);
-    padding: 2rem;
-    border-radius: 2.5rem;
-    border:solid 2px white;
-    display: flex;
-    flex-direction: column;
-}
 
 #zoneDepart{
     width: 50rem;

@@ -5,7 +5,7 @@ function checkIfMobile(id){
 }
 
 function displayAnnee(){
-    document.getElementById("choixAnnee").style.display="flex";
+        document.getElementById("choixAnnee").style.display="flex";
 }
 function generateDot(){
     var body=document.body
@@ -30,3 +30,13 @@ function supprimerElement(){
     tab[0].remove()
 }
 
+function onHover(id){
+    var e = document.getElementById(id).src="image/"+id+".png"
+}
+
+function onDefault(id){
+    let wordHoverLength = 5
+    let defaultImageSRC="image/"+id.substring(0,id.length-wordHoverLength)+".png"
+    var e = document.getElementById(id).src=defaultImageSRC
+    console.log(defaultImageSRC)
+}
