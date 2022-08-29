@@ -6,7 +6,7 @@
 	<meta name='viewport' content='user-scalable=0'>
 	<script src="joystick.js"></script>
 	<link rel="stylesheet" href="styleMobile.css">
-	<script>window.onload = function(e){firstPosition()};</script>
+	<script>window.onload = function(e){firstPosition(); hideArrow()};</script>
 	<title>Mathias Duprat</title>
 </head>
 <body>
@@ -26,17 +26,20 @@
 			</div>
 		</div>
 	</div>
+	<img id ="titleImg" src="image/title.png" alt="Bienvenue sur mon Portfolio">
 	<div id="conteneurJoystick">
 		<img src="image/joystick-base.png"/>
 		<div id="stick1">
 		<img id="imgJoystick" src="image/joystick-red.png"/>		
 		</div>
 	</div>
+	<img id="arrowImg" src="image/arrow.png" alt="aller vers le haut">
 	<div id="conteneurFusee"><img id="fusee" src="image/fusee.png" alt="fusee"> </div></div>
 	<img id="asteroide" src="image/asteroide.png" alt="aseteroide" >
 	<script>
 		let joystick1 = new JoystickController("stick1", 64, 8);
 		loop()
+		
 	</script>
 
 </body>

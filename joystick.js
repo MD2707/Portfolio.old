@@ -111,7 +111,7 @@ class JoystickController
 function update()
 {
     var estyle= document.getElementById("conteneurFusee").style
-	window.scroll(parseInt(estyle.left)- window.innerWidth/2.25,parseInt(estyle.top)-window.innerHeight/2.25); 
+	window.scroll(parseInt(estyle.left)- window.innerWidth/3,parseInt(estyle.top)-window.innerHeight/3); 
 }
 
 	
@@ -150,4 +150,18 @@ function onClickMenu(){
 function firstPosition(){
 	let styleFusee = document.getElementById("conteneurFusee").style
 	styleFusee.left = parseInt(document.documentElement.clientWidth+styleFusee.width)+"px"
+
+}
+
+function hideArrow(){
+	setTimeout(function() {
+		document.getElementById("arrowImg").style.display="none"
+	  }, 3000);
+	  setTimeout(function() {
+		document.getElementById("conteneurFusee").style.visibility="visible"
+	  }, 3000);
+	  setTimeout(function() {
+		document.getElementById("conteneurJoystick").style.visibility="visible"
+	  }, 3000);
+	  
 }

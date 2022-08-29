@@ -12,12 +12,19 @@ body
 	#conteneurFusee{
     position: absolute;
     display: flex;
+    visibility: hidden;
     top:8250px;
     width: fit-content;
     height: fit-content;
 }
 #fusee{
 	width: 25rem;
+}
+#titleImg{
+  position: absolute;
+  top: 7800px;
+  left: 70%;
+  width: 60rem;
 }
 #stick1{
     position: absolute; 
@@ -28,6 +35,7 @@ body
     border: 1px solid red; 
     width:fit-content; 
     position: fixed; 
+    visibility: hidden;
     bottom: 5rem;
     right: 5rem;
     -webkit-backface-visibility: hidden;
@@ -38,10 +46,30 @@ body
 #imgJoystick{
     width: 10rem;
 }
+
+#arrowImg {
+  display: flex;
+  height: 30rem;
+  width: auto;
+  position: absolute;
+  top: 8300px;
+  left: 90%;
+  z-index: 10;
+  animation-duration: .8s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+@keyframes clignoter {
+ 0%   { opacity:1; }
+ 40%   {opacity:0; }
+ 100% { opacity:1; }
+}
+
 #asteroide{
   position: absolute;
-  top: 8500px;
-  left: 25%;
+  top: 8800px;
+  left: 35%;
   width: 95rem;
   z-index: -2;
   -webkit-animation: rotate 20s linear infinite ;
