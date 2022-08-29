@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
-<script src="joystick.js"></script>
-<link rel="stylesheet" href="styleMobile.css">
 <head>
-	<title>Joystick Controls</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="joystick.js"></script>
+	<link rel="stylesheet" href="styleMobile.css">
+	<script>window.onload = function(e){firstPosition()};</script>
+	<title>Mathias Duprat</title>
 </head>
 <body>
 	<div id="responsiveHeader">
@@ -29,7 +33,7 @@
 		</div>
 	</div>
 	<div id="conteneurFusee"><img id="fusee" src="image/fusee.png" alt="fusee"> </div></div>
-
+	<img class="asteroide" src="image/asteroide.png" alt="aseteroide" >
 	<script>
 		let joystick1 = new JoystickController("stick1", 64, 8);
 		loop()

@@ -1,7 +1,7 @@
 function checkIfMobile(id){
     window.sessionStorage.setItem('annee',id);
     if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) location.replace('indexMobile.html')
-    else location.replace('indexPortfolio.html')
+    else location.replace('indexPc.html')
 }
 
 function displayAnnee(){

@@ -146,3 +146,8 @@ function onClickMenu(){
 	else
 	doc.style.display="none";
   }
+
+function firstPosition(){
+	let styleFusee = document.getElementById("conteneurFusee").style
+	styleFusee.left = parseInt(document.documentElement.clientWidth+styleFusee.width)+"px"
+}

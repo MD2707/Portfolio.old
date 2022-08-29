@@ -4,18 +4,16 @@
 
 body
 	{
-		width: 2000px;
-		height: 10000px;
+		width:  1500px;
+    border: solid red 2px;
+		height: 12000px;
     background-color: black;
-		font-family: Courier, monospaced;
-		font-size: 16px;
 		font-weight: bold;
 	}
 	#conteneurFusee{
     position: absolute;
     display: flex;
-    top:9000px;
-    left: 750px;
+    top:8250px;
     width: fit-content;
     height: fit-content;
 }
@@ -31,8 +29,9 @@ body
     border: 1px solid red; 
     width:fit-content; 
     position: fixed; 
-    bottom: 10rem;
+    bottom: 20rem;
     right: 10rem;
+    -webkit-backface-visibility: hidden;
 }
 #conteneurJoystick>img{
     width: 25rem;
@@ -40,15 +39,36 @@ body
 #imgJoystick{
     width: 15rem;
 }
+#asteroide{
+  position: absolute;
+  top: 9000px;
+  width: 95rem;
+  z-index: -2;
 
+}
 
+@-webkit-keyframes rotate {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotate {
+  from { -moz-transform: rotate( 0deg );   }
+  to   { -moz-transform: rotate( 360deg ); }
+}
+
+@keyframes rotate {
+from { transform: rotate( 0deg );   }
+to   { transform: rotate( 360deg ); }
+}
 
 /***********BURGER MENU********/
 #responsiveHeader img{
-    width: 7rem;
-    height: 7rem;
+    width: 12rem;
+    height: 12rem;
     position: fixed;
-    top: 1rem;
+    top: 2rem;
+    left: 2rem;
     background-color: white;
   }
   #menu{
@@ -57,9 +77,8 @@ body
     display: none;
     flex-direction: column;
     position: fixed;
-    padding:0rem 2rem;
-    top: 6rem;
-    left: 1rem;
+    top: 14rem;
+    left: 2rem;
     font-weight: bold;
   }
   .burgerMenuItem{
@@ -67,7 +86,7 @@ body
   }
   .burgerMenuItem>a{
     color: black;
-    font-size: 1.5rem;
+    font-size: 4rem;
     text-decoration: underline;
     text-decoration-color: black;
   }

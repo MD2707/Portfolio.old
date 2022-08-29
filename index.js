@@ -45,7 +45,6 @@ function maFonction(event){
         case "ArrowDown":
             event.preventDefault();
             downArrowPressed(vitesse);
-            direction=1;
             circleInRectangle(1);
             break;
         case "KeyW":
