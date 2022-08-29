@@ -137,3 +137,12 @@ var estyle= document.getElementById("conteneurFusee").style
 	estyle.top = String(eTop)+'px';
 	estyle.left = String(eLeft)+'px';
 }
+
+function onClickMenu(){
+	var doc=document.getElementById("menu");
+	var etat= doc.style.display;
+	if(etat== "none")
+	doc.style.display="flex";
+	else
+	doc.style.display="none";
+  }

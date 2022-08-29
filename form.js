@@ -36,3 +36,25 @@ function onClickMenu(){
   else
   doc.style.display="none";
 }
+
+function generateDot(){
+  var body=document.body
+  let circle=document.createElement("div");
+  circle.id="rond";
+  circle.className="cercle"
+  circle.style.width="2px";
+  circle.style.backgroundColor="white";
+  circle.style.height="2px";
+  circle.style.position="absolute";   
+  circle.style.top=  NombreRandom(0,body.clientHeight)+"px";
+  circle.style.left=  NombreRandom(0,body.clientWidth)+"px";
+  body.appendChild(circle);
+}
+
+function NombreRandom(min,max){
+  return Math.random() * (max - min + 1) + min;
+}
+function supprimerElement(){
+  tab = document.getElementsByClassName("cercle");
+  tab[0].remove()
+}

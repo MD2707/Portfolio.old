@@ -11,27 +11,25 @@
 <body>
     <header>
         <div>
-            <a class="button" href="index.html">Accueil</a>
+            <a class="button" href="index.html">Menu</a>
         </div>
         <div>
-            <a class="button" href="projet.html">Projets</a>
+            <a class="button" href="mentionLegal.html">Mention Legale</a>
         </div>
     </header>
     <div id="responsiveHeader">
         <div>
-            <img src="image/menu.png" onclick="onClickMenu()" alt="menu">
+            <img src="image/burgerMenu.jpg" onclick="onClickMenu()" alt="menu">
         </div>
         <div id="menu">
             <div  class="burgerMenuItem">
-                <a href="index.html">Accueil</a>
+                <a href="index.html">Menu</a>
             </div>
             <div  class="burgerMenuItem">
-                <a href="projet.html">Projet</a>
+                <a href="mentionLegal.html">Mention Legale</a>
             </div>
         </div>
     </div>
-    <div id="titreResponsive">Besoin de me Contacter ?</div>
-   
     <div id="containerForm">
         <form action="https://formsubmit.co/mathias.duprat@live.com" method="POST" enctype="multipart/form-data">
             <input class="formItem" type="text" name="name" required placeholder="  Nom">
@@ -47,13 +45,6 @@
             </div>
         </form> 
     </div>
-    <footer>
-        <div id="footerDiv">
-            <p>Copyright Mathias Duprat 2022</p>
-        </div>
-        <div id="footerA">
-            <a href="mentionLegal.html">mention légales</a>
-        </div>
-    </footer>   
 </body>
+<script> setInterval(generateDot, 200) </script>
 </html>

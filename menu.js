@@ -7,6 +7,9 @@ function checkIfMobile(id){
 function displayAnnee(){
         document.getElementById("choixAnnee").style.display="flex";
 }
+function hideAnnee(){
+    document.getElementById("choixAnnee").style.display="none";
+}
 function generateDot(){
     var body=document.body
     let circle=document.createElement("div");

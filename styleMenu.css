@@ -23,15 +23,33 @@ body{
 #choixAnnee{
     display: none;
     position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 30%;
     z-index: 2;
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
     background-color: rgba(32, 31, 31, 0.782);
-    padding: 1rem;
+    width: 15rem;
+    height: 8rem;
     border-radius: 2.5rem;
     border:solid 2px white;
 }
+#croix{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    width: 4rem;
+    height: 2.5rem;
+}
+#croix:hover {
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+ }
 #menu{
     height: 30rem;
 }
@@ -64,7 +82,7 @@ body{
 
 .link{
     color: white;
-    margin: 3rem 0;
+
 }
 ul,li{
     list-style-type: none;
