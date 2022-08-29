@@ -4,8 +4,7 @@
 
 body
 	{
-		width:  1500px;
-    border: solid red 2px;
+		width:  2000px;
 		height: 12000px;
     background-color: black;
 		font-weight: bold;
@@ -22,29 +21,33 @@ body
 }
 #stick1{
     position: absolute; 
-    left:82px; 
-    top:82px;
+    left:22%; 
+    top:22%;
 }
 #conteneurJoystick{
     border: 1px solid red; 
     width:fit-content; 
     position: fixed; 
-    bottom: 20rem;
-    right: 10rem;
+    bottom: 5rem;
+    right: 5rem;
     -webkit-backface-visibility: hidden;
 }
 #conteneurJoystick>img{
-    width: 25rem;
+    width: 18rem;
 }
 #imgJoystick{
-    width: 15rem;
+    width: 10rem;
 }
 #asteroide{
   position: absolute;
-  top: 9000px;
+  top: 8500px;
+  left: 25%;
   width: 95rem;
   z-index: -2;
-
+  -webkit-animation: rotate 20s linear infinite ;
+    -moz-animation: rotate 20s linear infinite ;
+    -ms-animation: rotate 20s linear infinite ;
+    -o-animation: rotate 20s linear infinite ;
 }
 
 @-webkit-keyframes rotate {
