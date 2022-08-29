@@ -111,6 +111,7 @@ to   { transform: rotate( 360deg ); }
     top: 14rem;
     left: 2rem;
     font-weight: bold;
+    z-index: 10000;
   }
   .burgerMenuItem{
     padding: 1rem;
