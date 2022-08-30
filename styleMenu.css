@@ -30,7 +30,7 @@ body{
     color: white;
     background-color: rgba(32, 31, 31, 0.782);
     width:max-content;
-    padding-right: 1rem;
+    padding: 1rem;
     height: 8rem;
     border-radius: 2.5rem;
     border:solid 2px white;
@@ -154,5 +154,9 @@ ul,li{
         position: absolute;
         top: 5px;
         right: 5px;
+    }
+    #parametreContainer{
+        width: 12rem;
+        height: max-content;
     }
 }
