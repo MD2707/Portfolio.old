@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleMenu.css">
     <script src="menu.js"></script>
+    <script>window.onload = function(e){sessionStorage.setItem("mode","droitier")};</script>
     <title>Menu</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
             <img class="croix" onclick="hide('parametreContainer')" src="image/crossMenu.png" alt="annuler">
             <div id="parametreContent">
                 <p>Mode Joystick (Mobile uniquement)</p>
-                <button>Gaucher</button>
+                <button  id="boutonModeJoystick" onclick="changeMode()">Gaucher</button>
             </div>
         </div>
         <nav>

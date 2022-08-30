@@ -43,3 +43,13 @@ function onDefault(id){
     var e = document.getElementById(id).src=defaultImageSRC
     console.log(defaultImageSRC)
 }
+function changeMode(){
+    if(sessionStorage.getItem("mode")=="droitier"){
+        sessionStorage.setItem("mode","gaucher");
+        document.getElementById("boutonModeJoystick").innerText="Droitier"
+    }    
+    else {
+        sessionStorage.setItem("mode","droitier");
+        document.getElementById("boutonModeJoystick").innerText="Gaucher"
+    }
+}

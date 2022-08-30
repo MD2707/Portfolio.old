@@ -168,3 +168,11 @@ function hideArrow(){
 	  }, 3000);
 	  
 }
+
+function modeJoystick(){
+	console.log("fuheihfeihu")
+	if(sessionStorage.getItem("mode")=="gaucher"){
+		document.getElementById("conteneurJoystick").style.left="5rem"
+		
+	}
+}
