@@ -151,6 +151,7 @@ function onClickMenu(){
 
 function firstPosition(){
 	let styleFusee = document.getElementById("conteneurFusee").style
+	document.body.style.zoom=1.0;this.blur()
 	styleFusee.left = parseInt(document.documentElement.clientWidth+styleFusee.width)+"px"
 
 }

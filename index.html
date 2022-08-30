@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="choixAnnee">
-        <img id="croix" onclick="hideAnnee()" src="image/crossMenu.png" alt="annuler">
+        <img class="croix" onclick="hide('choixAnnee')" src="image/crossMenu.png" alt="annuler">
         <ul>
             <li><a class="link" id="2021-2022" onclick="checkIfMobile(this.id)">2021-2022</a></li>
             <li><a class="link" id="2022-2023" onclick="checkIfMobile(this.id)">2022-2023</a></li>
@@ -18,9 +18,17 @@
         </ul>
     </div>
     <div id="menu">
+        <img  id="parametre" src="image/engrenages.png" alt="Parametre" onclick="display('parametreContainer')">
+        <div id="parametreContainer"> 
+            <img class="croix" onclick="hide('parametreContainer')" src="image/crossMenu.png" alt="annuler">
+            <div id="parametreContent">
+                <p>Mode Joystick (Mobile uniquement)</p>
+                <button>Gaucher</button>
+            </div>
+        </div>
         <nav>
             <div class="linkContainer">
-                <a onclick="displayAnnee() "><img class="menuItem"  id="démarrerHover" src="image/démarrer.png" onmouseover="onHover(this.id)" onmouseout=" onDefault(id)"></a>
+                <a onclick="display('choixAnnee') "><img class="menuItem"  id="démarrerHover" src="image/démarrer.png" onmouseover="onHover(this.id)" onmouseout=" onDefault(id)"></a>
             </div>
             <div class="linkContainer">
                 <a href="contact.html" ><img class="menuItem"  id="contactHover" src="image/contact.png" onmouseover="onHover(this.id)" onmouseout=" onDefault(id)"></a>

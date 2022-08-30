@@ -11,6 +11,36 @@ body{
     justify-content: center;
     
 }
+
+#parametre{
+    width: 4rem;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#parametreContainer{
+    position: absolute;
+    display: none;
+    background-color: red;
+    top: 30%;
+    z-index: 3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(32, 31, 31, 0.782);
+    width:max-content;
+    padding-right: 1rem;
+    height: 8rem;
+    border-radius: 2.5rem;
+    border:solid 2px white;
+
+}
+#parametreContent{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 * {
     cursor: url('image/fuseeCursorIcon.png'), default;	;
     font-size: 1.2rem;
@@ -37,19 +67,22 @@ body{
     border-radius: 2.5rem;
     border:solid 2px white;
 }
-#croix{
-    position: relative;
-    top: 2px;
-    left: 2px;
+.croix{
     width: 4rem;
     height: 2.5rem;
 }
-#croix:hover {
+.croix:hover {
     animation-duration: .8s;
     animation-name: clignoter;
     animation-iteration-count: infinite;
     transition: none;
  }
+#parametre:hover{
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+} 
 #menu{
     height: 30rem;
 }
@@ -115,5 +148,11 @@ ul,li{
 @media screen and (max-width: 430px){
     .menuItem{
         width: 13rem;
+    }
+    #parametre{
+        width: 2.5rem;
+        position: absolute;
+        top: 5px;
+        right: 5px;
     }
 }

@@ -4,11 +4,11 @@ function checkIfMobile(id){
     else location.replace('indexPc.html')
 }
 
-function displayAnnee(){
-        document.getElementById("choixAnnee").style.display="flex";
+function display(id){
+        document.getElementById(id).style.display="flex";
 }
-function hideAnnee(){
-    document.getElementById("choixAnnee").style.display="none";
+function hide(id){
+    document.getElementById(id).style.display="none";
 }
 function generateDot(){
     var body=document.body
