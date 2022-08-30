@@ -527,20 +527,6 @@ nav a{
 .imageProjetSup:hover{
     border: red solid 2px;
 }
-
-#stick1{
-    position: absolute; 
-    left:32px; 
-    top:32px;
-}
-#conteneurJoystick{
-    display: none;
-    border: 1px solid red; 
-    width: 128px; 
-    position: fixed; 
-    bottom: 5rem;
-    left: 5rem;
-}
 .conteneurBoutonLink{
     margin: 2rem 0;
 }

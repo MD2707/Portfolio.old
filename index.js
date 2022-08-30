@@ -85,19 +85,19 @@ function displayProject(event){
             && milieuY>parseInt(tmp.top)){
                  let lien = t.getElementsByClassName("link");
                  t.style.boxShadow ="white 0px 54px 55px, white 0px -12px 30px, white 0px 4px 6px, white 0px 12px 13px, white 0px -3px 5px";
-                if((event !=null && event.keyCode == 13 )||  (event.code!=null & event.code=="Enter")){
-                    window.open(lien[0].href)
+                if(!(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))){
+                    if((event !=null && event.keyCode == 13 )||(event.code!=null & event.code=="Enter")){
+                        window.open(lien[0].href)
+                    }
                 }
-        }
-        else{
-            t.style.boxShadow="none";
-        }
+            }
+            else t.style.boxShadow="none";
     });
 }
 
 function animConteneurProjet(){
     var element = document.getElementById("conteneurFusee");
-    var nbProjet=8;
+    var nbProjet=document.getElementsByClassName("conteneurProjet").length;
     let arr = new Array(nbProjet);
     let contArr= new Array(nbProjet);
     for (let i = 1; i <=nbProjet; i++) {
@@ -190,21 +190,19 @@ function supprimerFumee(){
 
 function choixAnnee(){
     idAnnee=sessionStorage.getItem('annee');
-    document.getElementById("tuto").style.display="flex"
-    document.getElementById("leftNav").style.display="flex";
-    sessionStorage.setItem('YearIsChose', 'true')
-    document.getElementById("conteneurFusee").style.display="flex"
-    
+    if(!(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))){
+        document.getElementById("tuto").style.display="flex"
+        document.getElementById("leftNav").style.display="flex";
+        document.getElementById("conteneurFusee").style.display="flex"
+    }
     let tabImageProject =  document.getElementsByClassName("projectImageForaYear")
     let tabTitre = document.getElementsByClassName("titreProjet")
     let tabProjetPdf = document.getElementsByClassName("linkProject")
-    //ANNEE 2021 - 2022 
-
     if(idAnnee=="2021-2022"){
         //change le titre de l'accueil
-        document.getElementById("mainTitle").innerHTML +=" (2021-2022)"
+        if(!(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))) document.getElementById("mainTitle").innerHTML +=" (2021-2022)"
         //la liste des titres pour l'année choisit
-        let tabTitreProjetFinal = ['La Station Meteo', 'Pong', "Lowatem", 'Creation d\'Entreprise',"Nerd.it", "Creation base de donée", "Atelier JPO", "Workon", "Plus de projet" ];
+        let tabTitreProjetFinal = ['La Station Meteo', 'Pong', "Lowatem", 'Creation Entreprise',"Nerd.it", "Creation BD", "Atelier JPO", "Workon", "Plus de projet" ];
         //la liste des noms d'images pour l'année choisit 
         let tabImageSource=['meteo.png','pong.png','lowatem.png','nerditEntreprise.png','nerdit.png','bd.png',"terrain.PNG","workon.png", "DevLight.png", "outilVisu.png"]
         //la liste des fichiers pdf pour chaque projet
@@ -218,7 +216,7 @@ function choixAnnee(){
     }
     if(idAnnee=="2022-2023"){
         //change le titre de l'accueil
-        document.getElementById("mainTitle").innerHTML +=" (2022-2023)"
+        if(!(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))) document.getElementById("mainTitle").innerHTML +=" (2022-2023)"
          //la liste des titres pour l'année choisit
          let tabTitreProjetFinal = [];
          //la liste des noms d'images pour l'année choisit 
@@ -242,7 +240,7 @@ function modifierProjet(tabTitre,tabTitreProjetFinal,tabImageProject,tabImageSou
 function afficherProjet(tabProjetPdfFinal){
     let tabProjetDisplayed =  document.getElementsByClassName("listeProjet")
     for(i=0;i<tabProjetPdfFinal.length;i++){
-    tabProjetDisplayed[i].style.display="block";
+        tabProjetDisplayed[i].style.display="block";
     }
 }
 function changerTitre(tabDebut,tabFinal){

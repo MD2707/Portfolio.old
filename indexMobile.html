@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name='viewport' content='user-scalable=0'>
+	<link rel="icon" type="image/png" sizes="16x16" href="image/fuseeCursorIcon.png">
 	<script src="joystick.js"></script>
+	<script src="index.js"></script>
 	<link rel="stylesheet" href="styleMobile.css">
-	<script>window.onload = function(e){firstPosition(); hideArrow()};</script>
-	<title>Mathias Duprat</title>
+	<script>window.onload = function(e){firstPosition(); hideArrow();choixAnnee()};</script>
+	<title>Portfolio Duprat Mathias</title>
 </head>
 <body>
 	<div id="responsiveHeader">
@@ -36,11 +38,114 @@
 	<img id="arrowImg" src="image/arrow.png" alt="aller vers le haut">
 	<div id="conteneurFusee"><img id="fusee" src="image/fusee.png" alt="fusee"> </div></div>
 	<img id="asteroide" src="image/asteroide.png" alt="aseteroide" >
+
+	<div class="listeProjet">
+		<div id="projet1">
+			<p class="titreProjet">Projet1</p>
+		</div>
+		<div id="projet1Img" class="planete"></div>
+		<div id="conteneurProjet1"class="conteneurProjet">
+			<img class=" conteneurProjetImg projectImageForaYear" src="image/defautImage.jpg" alt="meteo">
+			<a class ="link linkProject" target="_blank" href="">Entrer</a>
+		</div>
+	</div>
+	
+
+	<div class="listeProjet">
+		<div id="projet2">
+			<p class="titreProjet">Projet2</p>
+		</div>
+		<div id="projet2Img" class="planete"></div>
+		<div id="conteneurProjet2"class="conteneurProjet">
+			<img class=" conteneurProjetImg projectImageForaYear
+			" src="image/defautImage.jpg" alt="pong">
+			<a class ="link linkProject" href="" target="_blank">Entrer</a>
+		</div>
+	</div>
+	
+	<div class="listeProjet">
+		<div id="projet3">
+			<p class="titreProjet">Projet3</p>
+		</div>
+		<div id="projet3Img" class="planete"></div>
+		<div id="conteneurProjet3"class="conteneurProjet">
+			<img class=" conteneurProjetImg projectImageForaYear
+			" src="image/defautImage.jpg" alt="lowatem">
+			<a class ="link linkProject" href="" target="_blank">Entrer</a>
+		</div>
+	</div>
+	
+	<div class="listeProjet">
+		<div id="projet4">
+			<p class="titreProjet">Projet4</p>
+		</div>
+		<div id="projet4Img" class="planete"></div>
+		<div id="conteneurProjet4"class="conteneurProjet">
+			<img class=" conteneurProjetImg projectImageForaYear
+			" src="image/defautImage.jpg" alt="nerdit Entreprise">
+			<a class ="link linkProject" href="pdf/nerdit.pdf#zoom=80" target="_blank">Entrer</a>
+		</div>
+	</div>
+	
+
+	<div class="listeProjet">
+		<div id="projet5">
+			<p class="titreProjet">Projet5</p>
+		</div>
+		<div id="projet5Img" class="planete"></div>
+		<div id="conteneurProjet5"class="conteneurProjet">
+			<img class="conteneurProjetImg  projectImageForaYear
+			" src="image/defautImage.jpg" alt="nerdit">
+			<a class ="link linkProject" href="pdf/nerdit.pdf#zoom=80" target="_blank">Entrer</a>
+		</div>
+	</div>
+   
+	<div class="listeProjet">
+		<div id="projet6">
+			<p class="titreProjet">Projet6</p>
+		</div>
+		<div id="projet6Img" class="planete"></div>
+		<div id="conteneurProjet6"class="conteneurProjet">
+			<img class=" conteneurProjetImg projectImageForaYear
+			" src="image/defautImage.jpg" alt="bd">
+			<a class ="link linkProject" href="pdf/atelierProcessing.pdf#zoom=80" target="_blank">Entrer</a>
+		</div>
+	</div>
+	
+
+	<div class="listeProjet">
+		<div id="projet7">
+			<p class="titreProjet">Projet7</p>
+		</div>
+		<div id="projet7Img" class="planete"></div>
+		<div id="conteneurProjet7"class="conteneurProjet">
+			<img class=" conteneurProjetImg projectImageForaYear
+			" src="image/defautImage.jpg" alt="JPO">
+			<a class ="link linkProject" href="pdf/atelierProcessing.pdf#zoom=80" target="_blank">Entrer</a>
+		</div>
+	</div>
+	
+	<div class="listeProjet">
+		<div id="projet8">
+			<p class="titreProjet">Projet8</p>
+		</div>
+		<div id="projet8Img" class="planete"></div>
+		<div id="conteneurProjet8"class="conteneurProjet">
+			<img class=" conteneurProjetImg projectImageForaYear
+			" src="image/defautImage.jpg" alt="workon">
+			<a class ="link linkProject" href="pdf/Workon.pdf#zoom=80" target="_blank">Entrer</a>
+		</div>
+	</div>
+	<div class="listeProjet">
+		<p class="titreProjet" id="moreProjectTitle">Plus de projet !</p>
+		<div id="moreProject">
+			<a class="lienImg" href="" target="_blank"><img class="imageProjetSup projectImageForaYear" src="image/defautImage.jpg" alt=""></a>
+			<a class="lienImg" href="" target="_blank"><img class="imageProjetSup projectImageForaYear" src="image/defautImage.jpg" alt=""></a>
+		</div>
+	</div>
 	<script>
 		let joystick1 = new JoystickController("stick1", 64, 8);
 		loop()
-		
 	</script>
-
 </body>
 </html>

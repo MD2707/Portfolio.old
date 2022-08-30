@@ -5,7 +5,7 @@
 body
 	{
 		width:  2000px;
-		height: 12000px;
+		height: 22000px;
     background-color: black;
 		font-weight: bold;
 	}
@@ -13,16 +13,55 @@ body
     position: absolute;
     display: flex;
     visibility: hidden;
-    top:8250px;
+    top:18550px;
     width: fit-content;
     height: fit-content;
+    z-index: 1000000;
+}
+
+.link{
+  color: white;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 3rem 0;
+  text-decoration: none;
+  border-radius: 3rem;
+  padding:1rem 2rem;
+  width:fit-content;
+  height: fit-content;
+  background-color: red;
+}
+
+.titreProjet{color: white;
+  text-shadow: 
+    -1px -1px 1px #efede3, 
+    0px 1px 0 #2e2e2e, 
+    0px 2px 0 #2c2c2c, 
+    0px 3px 0 #2a2a2a, 
+    0px 4px 0 #282828, 
+    0px 5px 0 #262626, 
+    0px 6px 0 #242424, 
+    0px 7px 0 #222, 
+    0px 8px 0 #202020, 
+    0px 9px 0 #1e1e1e, 
+    0px 10px 0 #1c1c1c, 
+    0px 11px 0 #1a1a1a, 
+    0px 12px 0 #181818, 
+    0px 13px 0 #161616, 
+    0px 14px 0 #141414, 
+    0px 15px 0 #121212,
+    2px 20px 5px rgba(0, 0, 0, 0.9),
+    5px 23px 5px rgba(0, 0, 0, 0.3),
+    8px 27px 8px rgba(0, 0, 0, 0.5),
+    8px 28px 35px rgba(0, 0, 0, 0.9);
 }
 #fusee{
 	width: 25rem;
 }
 #titleImg{
   position: absolute;
-  top: 7800px;
+  top: 18200px;
   left: 70%;
   width: 60rem;
 }
@@ -32,13 +71,13 @@ body
     top:22%;
 }
 #conteneurJoystick{
-    border: 1px solid red; 
     width:fit-content; 
     position: fixed; 
     visibility: hidden;
     bottom: 5rem;
     right: 5rem;
     -webkit-backface-visibility: hidden;
+    z-index: 10000000000;
 }
 #conteneurJoystick>img{
     width: 18rem;
@@ -52,7 +91,7 @@ body
   height: 30rem;
   width: auto;
   position: absolute;
-  top: 8300px;
+  top: 18700px;
   left: 90%;
   z-index: 10;
   animation-duration: .8s;
@@ -68,7 +107,7 @@ body
 
 #asteroide{
   position: absolute;
-  top: 8800px;
+  top: 19000px;
   left: 35%;
   width: 95rem;
   z-index: -2;
@@ -111,7 +150,7 @@ to   { transform: rotate( 360deg ); }
     top: 14rem;
     left: 2rem;
     font-weight: bold;
-    z-index: 10000;
+    z-index: 100000000000000000000000;
   }
   .burgerMenuItem{
     padding: 1rem;
@@ -123,3 +162,274 @@ to   { transform: rotate( 360deg ); }
     text-decoration-color: black;
   }
   
+.planete{
+  -webkit-animation: rotate 20s linear infinite ;
+    -moz-animation: rotate 20s linear infinite ;
+    -ms-animation: rotate 20s linear infinite ;
+    -o-animation: rotate 20s linear infinite ;
+}
+/**** STYLE DES PROJETS****/
+
+/***PROJET 1********/
+#projet1{
+  position: relative;
+  color: white;
+  font-size: 5rem;
+  padding: 2rem;
+  top: 17700px;
+  left: 35%;
+}
+#projet1Img{
+  position: relative;
+  top: 16800px;
+  left: 45%;
+  width: 40rem;
+  height: 40rem;
+  background-image: url("image/planete.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*******PROJET 2******/
+#projet2{
+  position: relative;
+  color: white;
+  font-size: 5rem;
+  padding: 2rem;
+  left:35%;
+  top: 15750px;
+}
+#projet2Img{
+  position: relative;
+  top: 14900px;
+  left: 45%;
+  width: 30rem;
+  height: 30rem;
+  background-image: url("image/planete2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*******PROJET 3******/
+#projet3{
+  position: relative;
+  color: white;
+  font-size: 5rem;
+  padding: 2rem;
+  left: 35%;
+  top: 13900px;
+}
+#projet3Img{
+  position: relative;
+  top: 13100px;
+  left: 40%;
+  width: 40rem;
+  height: 40rem;
+  background-image: url("image/planete3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*******PROJET 4******/
+#projet4{
+  position: relative;
+  color: white;
+  font-size: 5rem;
+  padding: 2rem;
+  left: 35%;
+  top: 12100px;
+}
+#projet4Img{
+  position: relative;
+  top: 11200px;
+  left: 45%;
+  width: 30rem;
+  height: 30rem;
+  background-image: url("image/planete4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*******PROJET 5******/
+#projet5{
+  position: relative;
+  color: white;
+  font-size: 5rem;
+  padding: 2rem;
+  left: 35%;
+  top: 10200px;
+}
+#projet5Img{
+  position: relative;
+  top: 9200px;
+  left: 35%;
+  width: 50rem;
+  height: 50rem;
+  background-image: url("image/planete5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*******PROJET 6******/
+#projet6{
+  position: relative;
+  color: white;
+  font-size: 5rem;
+  padding: 2rem;
+  left: 35%;
+  top: 8000px;
+}
+#projet6Img{
+  position: relative;
+  top: 7100px;
+  left: 40%;
+  width: 40rem;
+  height: 40rem;
+  background-image: url("image/planete6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*******PROJET 7******/
+#projet7{
+  position: relative;
+  color: white;
+  font-size: 5rem;
+  padding: 2rem;
+  left: 35%;
+  top: 6000px;
+}
+#projet7Img{
+  position: relative;
+  top: 5000px;
+  left: 40%;
+  width: 40rem;
+  height: 40rem;
+  background-image: url("image/planete7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*******PROJET 8******/
+#projet8{
+  position: relative;
+  color: white;
+  font-size: 5rem;
+  padding: 2rem;
+  left: 35%;
+  top: 3800px;
+}
+#projet8Img{
+  position: relative;
+  top: 2900px;
+  left: 45%;
+  width: 35rem;
+  height: 35rem;
+  background-image: url("image/planete8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#conteneurProjet1{
+  position: absolute;
+  top: 17200px;
+  left: 90%;
+}
+#conteneurProjet2{
+  position: absolute;
+  top: 16250px;
+  left: 90%;
+}
+#conteneurProjet3{
+  position: absolute;
+  top: 15250px;
+  left: 90%;
+}
+#conteneurProjet4{
+  position: absolute;
+  top: 14300px;
+  left: 90%;
+}
+#conteneurProjet5{
+  position: absolute;
+  top: 13200px;
+  left: 90%;
+}
+#conteneurProjet6{
+  position: absolute;
+  top: 12100px;
+  left: 90%;
+}
+#conteneurProjet7{
+  position: absolute;
+  top: 11100px;
+  left: 90%;
+}
+#conteneurProjet8{
+  position: absolute;
+  top: 9900px;
+  left: 90%;
+}
+
+.conteneurProjet{
+  color: white;
+  background-color: rgba(32, 31, 31, 0.612);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:1rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 2.5rem;
+  border:solid 2px white;
+  opacity: 0;
+}
+.conteneurProjetImg{
+  width: 22rem;
+  height: 14rem;
+  border-radius: 2.5rem;
+  box-shadow: 1px 1px 12px white;
+}
+
+#moreProject{
+  position: absolute;
+  top: 8800px;
+  left: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  flex-direction: row;
+  border: solid white 2px;
+  border-radius: 2rem;
+  background-color: rgba(32, 31, 31, 0.612);
+}
+#moreProjectTitle{
+  position: absolute;
+  top: 9300px;
+  width: fit-content;
+  left: 75%;
+  font-size: 4rem;
+}
+.imageProjetSup{
+  width: 10rem;
+  height: 8rem;
+  border: solid 2px black;
+  border-radius: 2rem;
+  box-sizing: border-box;
+}
+.lienImg{
+  width: 15rem;
+  margin: 2rem;
+}
+.imageProjetSup:hover{
+  border: red solid 2px;
+}

@@ -110,6 +110,8 @@ class JoystickController
 
 function update()
 {
+	displayProject(null);
+	animConteneurProjet();
     var estyle= document.getElementById("conteneurFusee").style
 	window.scroll(parseInt(estyle.left)- window.innerWidth/3,parseInt(estyle.top)-window.innerHeight/3); 
 }
@@ -122,17 +124,17 @@ var eLeft = document.getElementById("conteneurFusee").offsetLeft
 var estyle= document.getElementById("conteneurFusee").style
   requestAnimationFrame(loop);
 	update();
-	if(joystick1.value.y>0) {
-		eTop+=5;	
+	if(joystick1.value.y>0.25) {
+		eTop+=10;	
 	}
-	if(joystick1.value.y<0){
-		eTop-=5;
+	if(joystick1.value.y<-0.25){
+		eTop-=10;
 	}
-	if(joystick1.value.x>0) {
-		eLeft+=5;		
+	if(joystick1.value.x>0.25) {
+		eLeft+=8;		
 	}
-	if(joystick1.value.x<0){
-		eLeft-=5;
+	if(joystick1.value.x<-0.25){
+		eLeft-=8;
 	}
 	estyle.top = String(eTop)+'px';
 	estyle.left = String(eLeft)+'px';
