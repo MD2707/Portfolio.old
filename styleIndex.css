@@ -181,37 +181,6 @@ nav a{
 
 
 
-/***********BURGER MENU********/
-#responsiveHeader img{
-    width: 5rem;
-    height: 5rem;
-    position: fixed;
-    top: 1rem;
-  }
-  #menu{
-    background-color: white;
-    border:solid 2px black;
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    padding:0rem 2rem;
-    top: 6rem;
-    left: 1rem;
-    font-weight: bold;
-  }
-  #responsiveHeader{  
-    display: none;
-  }
-  .burgerMenuItem{
-    padding: 1rem;
-  }
-  .burgerMenuItem>a{
-    color: black;
-    font-size: 1.5rem;
-    text-decoration: underline;
-    text-decoration-color: black;
-  }
-  
 /***PROJET 1********/
 #projet1{
     position: relative;

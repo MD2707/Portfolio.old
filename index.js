@@ -121,14 +121,21 @@ function animConteneurProjet(){
 
 function onClickMenu(){
     var doc=document.getElementById("menu");
-    var etat= doc.style.display;
-    if(etat== "none")
-    doc.style.display="flex";
-    else
-    doc.style.display="none";
+    var img = document.getElementById("burgerMenuImg")
+    
+    if(doc.style.display== "none"){
+      img.src="image/crossMenu.png"
+      img.style.backgroundColor="black"
+      doc.style.display="flex";
+      doc.classList.add('animationBurgerMenu');  
+    }
+    else{
+      img.src="image/burgerMenu.jpg"
+      img.style.backgroundColor="white"
+      doc.style.display="none";
+      doc.classList.add('animationBurgerMenu'); 
+    }
   }
-  
-
   function circleInRectangle(direction){
     var rect = document.getElementById("conteneurFusee");
     var body=document.body

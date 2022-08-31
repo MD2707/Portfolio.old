@@ -152,6 +152,29 @@ to   { transform: rotate( 360deg ); }
     font-weight: bold;
     z-index: 100000000000000000000000;
   }
+
+  .animationBurgerMenu {
+    animation-duration: 0.8s;
+    animation-name: glissement;
+    animation-iteration-count: 1;
+  }
+  .start {
+    animation-direction: normal;
+  }
+  .end {
+    animation-direction: reverse;
+  }
+  
+  @keyframes glissement {
+    from {
+      left: -35%;
+    }
+  
+    to {
+      left: 0%;
+    }
+  }
+  
   .burgerMenuItem{
     padding: 1rem;
   }

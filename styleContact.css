@@ -142,6 +142,28 @@ header{
   font-weight: bold;
   z-index: 2;
 }
+.animationBurgerMenu {
+  animation-duration: 0.8s;
+  animation-name: glissement;
+  animation-iteration-count: 1;
+}
+.start {
+  animation-direction: normal;
+}
+.end {
+  animation-direction: reverse;
+}
+
+@keyframes glissement {
+  from {
+    left: -35%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
 #responsiveHeader{  
   display: none;
 }
