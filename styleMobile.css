@@ -23,7 +23,7 @@ body
   color: white;
   box-sizing: border-box;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 3.5rem;
   margin: 3rem 0;
   text-decoration: none;
   border-radius: 3rem;
@@ -204,10 +204,10 @@ to   { transform: rotate( 360deg ); }
 }
 #projet1Img{
   position: relative;
-  top: 16800px;
-  left: 45%;
-  width: 40rem;
-  height: 40rem;
+  top: 16500px;
+  left: 35%;
+  width: 60rem;
+  height: 60rem;
   background-image: url("image/planete.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -220,14 +220,14 @@ to   { transform: rotate( 360deg ); }
   font-size: 5rem;
   padding: 2rem;
   left:35%;
-  top: 15750px;
+  top: 15300px;
 }
 #projet2Img{
   position: relative;
-  top: 14900px;
-  left: 45%;
-  width: 30rem;
-  height: 30rem;
+  top: 14300px;
+  left: 40%;
+  width: 40rem;
+  height: 40rem;
   background-image: url("image/planete2.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -240,14 +240,14 @@ to   { transform: rotate( 360deg ); }
   font-size: 5rem;
   padding: 2rem;
   left: 35%;
-  top: 13900px;
+  top: 13300px;
 }
 #projet3Img{
   position: relative;
-  top: 13100px;
-  left: 40%;
-  width: 40rem;
-  height: 40rem;
+  top: 12200px;
+  left: 30%;
+  width: 60rem;
+  height: 60rem;
   background-image: url("image/planete3.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -260,14 +260,14 @@ to   { transform: rotate( 360deg ); }
   font-size: 5rem;
   padding: 2rem;
   left: 35%;
-  top: 12100px;
+  top: 11000px;
 }
 #projet4Img{
   position: relative;
-  top: 11200px;
-  left: 45%;
-  width: 30rem;
-  height: 30rem;
+  top: 10000px;
+  left: 40%;
+  width: 40rem;
+  height: 40rem;
   background-image: url("image/planete4.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -281,14 +281,14 @@ to   { transform: rotate( 360deg ); }
   font-size: 5rem;
   padding: 2rem;
   left: 35%;
-  top: 10200px;
+  top: 9000px;
 }
 #projet5Img{
   position: relative;
-  top: 9200px;
-  left: 35%;
-  width: 50rem;
-  height: 50rem;
+  top: 7700px;
+  left: 27%;
+  width: 70rem;
+  height:70rem;
   background-image: url("image/planete5.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -302,14 +302,14 @@ to   { transform: rotate( 360deg ); }
   font-size: 5rem;
   padding: 2rem;
   left: 35%;
-  top: 8000px;
+  top: 6400px;
 }
 #projet6Img{
   position: relative;
-  top: 7100px;
-  left: 40%;
-  width: 40rem;
-  height: 40rem;
+  top: 5250px;
+  left: 30%;
+  width: 60rem;
+  height: 60rem;
   background-image: url("image/planete6.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -323,14 +323,14 @@ to   { transform: rotate( 360deg ); }
   font-size: 5rem;
   padding: 2rem;
   left: 35%;
-  top: 6000px;
+  top: 4100px;
 }
 #projet7Img{
   position: relative;
-  top: 5000px;
-  left: 40%;
-  width: 40rem;
-  height: 40rem;
+  top: 3000px;
+  left: 35%;
+  width: 50rem;
+  height: 50rem;
   background-image: url("image/planete7.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -345,14 +345,14 @@ to   { transform: rotate( 360deg ); }
   font-size: 5rem;
   padding: 2rem;
   left: 35%;
-  top: 3800px;
+  top: 1900px;
 }
 #projet8Img{
   position: relative;
-  top: 2900px;
-  left: 45%;
-  width: 35rem;
-  height: 35rem;
+  top: 700px;
+  left: 35%;
+  width: 50rem;
+  height: 50rem;
   background-image: url("image/planete8.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -361,42 +361,42 @@ to   { transform: rotate( 360deg ); }
 
 #conteneurProjet1{
   position: absolute;
-  top: 17200px;
+  top: 17100px;
   left: 90%;
 }
 #conteneurProjet2{
   position: absolute;
-  top: 16250px;
+  top: 16000px;
   left: 90%;
 }
 #conteneurProjet3{
   position: absolute;
-  top: 15250px;
+  top: 15000px;
   left: 90%;
 }
 #conteneurProjet4{
   position: absolute;
-  top: 14300px;
+  top: 14000px;
   left: 90%;
 }
 #conteneurProjet5{
   position: absolute;
-  top: 13200px;
+  top: 12900px;
   left: 90%;
 }
 #conteneurProjet6{
   position: absolute;
-  top: 12100px;
+  top: 11800px;
   left: 90%;
 }
 #conteneurProjet7{
   position: absolute;
-  top: 11100px;
+  top: 10800px;
   left: 90%;
 }
 #conteneurProjet8{
   position: absolute;
-  top: 9900px;
+  top: 9600px;
   left: 90%;
 }
 
@@ -408,28 +408,27 @@ to   { transform: rotate( 360deg ); }
   align-items: center;
   padding:1rem;
   width: fit-content;
-  height: fit-content;
+  height: 32rem;
   border-radius: 2.5rem;
   border:solid 2px white;
   opacity: 0;
 }
 .conteneurProjetImg{
-  width: 22rem;
-  height: 14rem;
+  width: 28rem;
+  height: 20rem;
   border-radius: 2.5rem;
   box-shadow: 1px 1px 12px white;
 }
 
 #moreProject{
   position: absolute;
-  top: 8800px;
+  top: 8300px;
   left: 80%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
-  height: auto;
+
+  width: 600px;
+  height: fit-content;
   flex-direction: row;
   border: solid white 2px;
   border-radius: 2rem;
@@ -437,14 +436,14 @@ to   { transform: rotate( 360deg ); }
 }
 #moreProjectTitle{
   position: absolute;
-  top: 9300px;
+  top: 8900px;
   width: fit-content;
   left: 75%;
   font-size: 4rem;
 }
 .imageProjetSup{
-  width: 10rem;
-  height: 8rem;
+  width: 25rem;
+  height: 15rem;
   border: solid 2px black;
   border-radius: 2rem;
   box-sizing: border-box;
@@ -454,5 +453,5 @@ to   { transform: rotate( 360deg ); }
   margin: 2rem;
 }
 .imageProjetSup:hover{
-  border: red solid 2px;
+  border: red solid 1rem;
 }
