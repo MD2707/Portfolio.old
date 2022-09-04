@@ -30,26 +30,32 @@ function NombreRandom(min,max){
 }
 function supprimerElement(){
     tab = document.getElementsByClassName("cercle");
-    tab[0].remove()
+    tab[0].remove();
 }
 
 function onHover(id){
-    var e = document.getElementById(id).src="image/"+id+".png"
+    var e = document.getElementById(id).src="image/"+id+".png";
 }
 
 function onDefault(id){
-    let wordHoverLength = 5
-    let defaultImageSRC="image/"+id.substring(0,id.length-wordHoverLength)+".png"
-    var e = document.getElementById(id).src=defaultImageSRC
-    console.log(defaultImageSRC)
+    let wordHoverLength = 5;
+    let defaultImageSRC="image/"+id.substring(0,id.length-wordHoverLength)+".png";
+    var e = document.getElementById(id).src=defaultImageSRC;
+    console.log(defaultImageSRC);
 }
 function changeMode(){
     if(sessionStorage.getItem("mode")=="droitier"){
         sessionStorage.setItem("mode","gaucher");
-        document.getElementById("boutonModeJoystick").innerText="Droitier"
+        document.getElementById("boutonModeJoystick").innerText="Droitier";
     }    
     else {
         sessionStorage.setItem("mode","droitier");
-        document.getElementById("boutonModeJoystick").innerText="Gaucher"
+        document.getElementById("boutonModeJoystick").innerText="Gaucher";
     }
+}
+
+function afficherCredit(id){
+    var e = document.getElementById(id);
+    if(e.style.display!="block") e.style.display="block";
+    else e.style.display="none";
 }

@@ -171,7 +171,7 @@ to   { transform: rotate( 360deg ); }
     }
   
     to {
-      left: 0%;
+      left: 2rem;
     }
   }
   
