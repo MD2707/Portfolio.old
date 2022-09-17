@@ -177,6 +177,7 @@ nav a{
     font-size:1.5rem ;
     text-decoration: none;
     padding:2rem 0;
+    z-index: 10000000000000000000000;
 }
 
 
