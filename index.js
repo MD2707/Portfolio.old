@@ -184,7 +184,6 @@ function onClickMenu(){
         circle.style.borderRadius="5rem";
 
         body.appendChild(circle);
-        console.log(document.body.childNodes)
   }
 function NombreRandom(min,max){
     return Math.random() * (max - min + 1) + min;
@@ -192,7 +191,7 @@ function NombreRandom(min,max){
 
 function supprimerFumee(){
     tab = document.getElementsByClassName("cercle")
-        tab[10].remove()
+    tab[0].remove()
 }
 
 function choixAnnee(){
