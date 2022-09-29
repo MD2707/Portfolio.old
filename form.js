@@ -63,7 +63,4 @@ function generateDot(){
 function NombreRandom(min,max){
   return Math.random() * (max - min + 1) + min;
 }
-function supprimerElement(){
-  tab = document.getElementsByClassName("cercle");
-  tab[0].remove()
-}
+

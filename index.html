@@ -23,9 +23,18 @@
         <img  id="parametre" src="image/engrenages.png" alt="Parametre" onclick="display('parametreContainer')">
         <div id="parametreContainer"> 
             <img class="croix" onclick="hide('parametreContainer')" src="image/crossMenu.png" alt="annuler">
-            <div id="parametreContent">
+            <div class="parametreContent">
                 <p>Mode Joystick (Mobile uniquement)</p>
                 <button  id="boutonModeJoystick" onclick="changeMode()">Gaucher</button>
+            </div>
+            <div class="parametreContent">
+                <p>Changer de vaisseau</p>
+                <div id="containerChoixVaisseau">
+                    <img onclick ="changerVaisseau(this.id); this.style.borderColor= 'green';"class="imageVaisseau" id="typeVaisseau1" src="image/vaisseauSW.png" alt="vaisseau">
+                    <img onclick ="changerVaisseau(this.id);this.style.borderColor= 'green';"  class="imageVaisseau" id="typeVaisseau2" src="image/ovni.png" alt="ovni">
+                    <img onclick ="changerVaisseau(this.id);this.style.borderColor= 'green';"  class="imageVaisseau" id="typeVaisseau3" src="image/fusee.png" alt="fusee">
+                </div>
+                
             </div>
         </div>
         <nav>

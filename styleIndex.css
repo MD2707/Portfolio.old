@@ -10,8 +10,20 @@
     font-family: 'Roboto', sans-serif;
 
 }
-
-.titreProjet{color: white;
+@keyframes animationTitre {
+    0%   { transform: translateX(-1000px); }
+    100% { transform: translateX(0px); }
+  }
+.titreProjetOnclick{
+    -webkit-animation: animationTitre 0.5s cubic-bezier(.9,.03,.69,.22) 1  ;
+    -moz-animation: animationTitre 0.5s cubic-bezier(.9,.03,.69,.22) 1 ;
+    -ms-animation: animationTitre  0.5s cubic-bezier(.9,.03,.69,.22) 1 ;
+    -o-animation: animationTitre 0.5s cubic-bezier(.9,.03,.69,.22) 1 ;
+    position: relative;
+    left: 5500px;
+  }
+.titreProjet{
+        color: white;
         text-shadow: 
           -1px -1px 1px #efede3, 
           0px 1px 0 #2e2e2e, 
@@ -209,7 +221,7 @@ nav a{
     color: white;
     font-size: 5rem;
     padding: 2rem;
-    left: 5500px;
+    left: 0px;
     top: 16200px;
 }
 #projet2Img{
@@ -229,7 +241,7 @@ nav a{
     color: white;
     font-size: 5rem;
     padding: 2rem;
-    left: 5500px;
+    left: 0px;
     top: 14200px;
 }
 #projet3Img{
@@ -249,7 +261,7 @@ nav a{
     color: white;
     font-size: 5rem;
     padding: 2rem;
-    left: 5500px;
+    left: 0px;
     top: 12200px;
 }
 #projet4Img{
@@ -270,7 +282,7 @@ nav a{
     color: white;
     font-size: 5rem;
     padding: 2rem;
-    left: 5500px;
+    left: 0px;
     top: 10200px;
 }
 #projet5Img{
@@ -291,7 +303,7 @@ nav a{
     color: white;
     font-size: 5rem;
     padding: 2rem;
-    left: 5500px;
+    left: 0px;
     top: 8100px;
 }
 #projet6Img{
@@ -312,7 +324,7 @@ nav a{
     color: white;
     font-size: 5rem;
     padding: 2rem;
-    left: 5500px;
+    left: 0px;
     top: 6200px;
 }
 #projet7Img{
@@ -334,7 +346,7 @@ nav a{
     color: white;
     font-size: 5rem;
     padding: 2rem;
-    left: 5500px;
+    left: 0px;
     top: 4200px;
 }
 #projet8Img{

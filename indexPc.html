@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="image/fuseeCursorIcon.png">
     <script src="index.js"></script>
+    <script src="menu.js"></script>
     <link rel="stylesheet" href="styleIndex.css">
-    <script>window.onload = function(e){functionViewOnLoad(), choixAnnee()};</script>
+    <script>window.onload = function(e){functionViewOnLoad(); choixAnnee()};</script>
     <title>Portfolio Duprat Mathias</title>
-    <script>setInterval(function(){supprimerFumee()},100)</script>
-</head>
+    </head>
 <body onkeydown="maFonction(event)">  
     <div id="fondPage">
         <div id="conteneurFusee"><img id="fusee" src="image/fusee.png" alt="fusee"> </div></div>
@@ -43,7 +43,7 @@
 
         <div class="listeProjet">
             <div id="projet1">
-                <p class="titreProjet">Projet1</p>
+                <p class="titreProjet" >Projet1</p>
             </div>
             <div id="projet1Img" class="planete"></div>
             <div id="conteneurProjet1"class="conteneurProjet">
@@ -147,6 +147,6 @@
             </div>
         </div>
     </div>
-
+    <script>changerImageVaisseau() ;setInterval(function(){supprimerFumee()},100)</script>
 </body>
 </html>

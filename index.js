@@ -100,6 +100,7 @@ function animConteneurProjet(){
     var nbProjet=document.getElementsByClassName("conteneurProjet").length;
     let arr = new Array(nbProjet);
     let contArr= new Array(nbProjet);
+    var tabTitreProjet = document.getElementsByClassName("titreProjet");
     for (let i = 1; i <=nbProjet; i++) {
         arr[i]=document.querySelector("#conteneurProjet"+i);
         contArr[i]=getComputedStyle(arr[i]);
@@ -114,7 +115,10 @@ function animConteneurProjet(){
                 }
             ],{duration:500})
             arr[i].style.opacity = 1;
+            
         }
+        if(parseInt(element.style.top)<parseInt(contArr[i].top)+100)
+        tabTitreProjet[i].classList.add("titreProjetOnclick")
     }
 }
 
@@ -264,5 +268,14 @@ function changerImage(tabDebut,tabFinal){
 function changerPdf(tabDebut,tabFinal){
     for(var i=0; i<tabDebut.length;i++){
         tabDebut[i].href ="pdf/"+tabFinal[i]+"#zoom=80"
+    }
+}
+
+function animTitreProjet(conteneurFusee){
+    var tabTitreProjet = document.getElementsByClassName("titreProjet");
+    for(var i=0; i<tabTitreProjet.length;i++){
+        var titreStyle = window.getComputedStyle(tabTitreProjet[i]);
+            tabTitreProjet[i].classList.remove('titreProjet');
+            tabTitreProjet[i].classList.add('titreProjetOnclick'); 
     }
 }

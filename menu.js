@@ -59,3 +59,24 @@ function afficherCredit(id){
     if(e.style.display!="block") e.style.display="block";
     else e.style.display="none";
 }
+
+function changerVaisseau(id){
+    sessionStorage.setItem("Vaisseau","0");
+    var element = document.getElementById(id);
+    if(id == "typeVaisseau1")
+        sessionStorage.setItem("Vaisseau","1");
+    if(id == "typeVaisseau2")
+        sessionStorage.setItem("Vaisseau","2");
+    if(id == "typeVaisseau3")
+    sessionStorage.setItem("Vaisseau","3");
+    
+}
+function changerImageVaisseau(){
+    console.log(sessionStorage.getItem("Vaisseau","2"))
+    if(sessionStorage.getItem("Vaisseau")== "1")
+        document.getElementById("fusee").src="image/vaisseauSW.png";
+    if(sessionStorage.getItem("Vaisseau")== "2")
+        document.getElementById("fusee").src="image/ovni.png";
+    if(sessionStorage.getItem("Vaisseau")== "3")
+        document.getElementById("fusee").src="image/fusee.png";
+}
