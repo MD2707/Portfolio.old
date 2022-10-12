@@ -181,6 +181,7 @@ nav{
     position: fixed;
     left: 5rem;
     bottom: 5rem;
+    z-index: 10000000000000000000000;
 }
 nav a{
     color: white;
