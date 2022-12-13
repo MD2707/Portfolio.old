@@ -228,11 +228,11 @@ function choixAnnee(){
         //change le titre de l'accueil
         if(!(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))) document.getElementById("mainTitle").innerHTML +=" (2022-2023)"
          //la liste des titres pour l'année choisit
-         let tabTitreProjetFinal = [];
+         let tabTitreProjetFinal = ["Labyrinthe Java", "Mini - Shell"," Cryptographie RSA","Filtre de Bloom"," Réseaux et DNS"];
          //la liste des noms d'images pour l'année choisit 
-         let tabImageSource=[]
+         let tabImageSource=["labyrinthe.png","meteo.png","RSA.png","meteo.png", "meteo.png"];
          //la liste des fichiers pdf pour chaque projet
-         let tabProjetPdfFinal =[]
+         let tabProjetPdfFinal =["labyrintheJava.pdf","miniShell.pdf","RSA.pdf","FiltreBloom.pdf","DNS.pdf"];
         modifierProjet(tabTitre,tabTitreProjetFinal,tabImageProject,tabImageSource,tabProjetPdf,tabProjetPdfFinal)
         afficherProjet(tabProjetPdfFinal)
     }
